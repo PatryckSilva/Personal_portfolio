@@ -78,11 +78,10 @@ export function ContextMenuProvider({
         {children}
       </ContextMenuTrigger>
 
-      <ContextMenuContent className="w-64 bg-background/50 backdrop-blur-sm">
+      <ContextMenuContent className="w-64 bg-background/50 backdrop-blur-md">
         {/* TODO: adicionar function de copiar link */}
         <ContextMenuItem
           onClick={() => {
-            console.log(`theme`, theme);
             theme === "dark" ? setTheme("light") : setTheme("dark");
           }}
           inset

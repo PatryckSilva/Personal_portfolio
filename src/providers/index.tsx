@@ -2,6 +2,8 @@
 
 import { ContextMenuProvider } from "@/components/contextMenuProvider";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams";
+import { InteractiveBackground } from "@/components/ui/interactive-background";
+import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "next-themes";
 import { ReactNode } from "react";
 
@@ -9,7 +11,10 @@ export const Providers = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider attribute="class">
       <ContextMenuProvider>
-        <BackgroundBeamsWithCollision>{children}</BackgroundBeamsWithCollision>
+        <InteractiveBackground>
+          {children}
+          <Toaster />
+        </InteractiveBackground>
       </ContextMenuProvider>
     </ThemeProvider>
   );

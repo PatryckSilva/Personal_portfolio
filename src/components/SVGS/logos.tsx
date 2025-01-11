@@ -138,9 +138,9 @@ export const ReactQueryLogo = () => {
 
 export const ProfileCard = () => {
   return (
-    <button className="z-0 h-[200px] w-[200px] cursor-pointer rounded-full border-2 p-1 transition-all duration-500 hover:dark:border-gray-400/90">
-      <div className="flex h-full w-full items-center justify-center rounded-full bg-muted object-cover p-2 transition-all duration-500 hover:scale-95 active:scale-95">
-        <span className=" inline-block size-full">
+    <button className="z-0 h-[200px] w-[200px] cursor-pointer rounded-full border-2 border-foreground p-1 transition-all duration-500">
+      <div className="flex h-full w-full items-center justify-center rounded-full bg-foreground object-cover p-2 transition-all duration-500 hover:scale-95 active:scale-95">
+        <span className="inline-block size-full">
           <figure className={`relative size-full overflow-hidden rounded-full`}>
             <Image
               src={"/images/stacks/eu.png"}

@@ -35,7 +35,6 @@ export const SocialMediasButtons = () => {
           target="_blank"
           className={cn(
             `h-max w-8 text-foreground/70 transition-transform duration-300 ease-in-out hover:scale-110 hover:text-foreground`,
-            "dark:text-foreground/70 dark:hover:text-foreground",
           )}
         >
           {item.icon}
