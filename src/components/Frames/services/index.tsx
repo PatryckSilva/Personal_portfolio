@@ -31,7 +31,7 @@ export const Services = () => {
   ];
   return (
     <section
-      className={`flex w-full flex-col items-center justify-center gap-10 pt-40`}
+      className={`flex w-full flex-col items-center justify-center gap-10 pt-20`}
     >
       <article className={`flex flex-col items-center gap-4 text-center`}>
         <h2
