@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/accordion";
 
 export const ExperienceCard = () => {
+  const bulletPointsFirstPart = bulletPointsExperience.slice(0, 13);
+  const bulletPointsSecondPart = bulletPointsExperience.slice(13, 25);
   return (
     <Card className={`border-border px-2`}>
       <CardHeader>
@@ -35,7 +37,7 @@ export const ExperienceCard = () => {
       <CardContent className="flex justify-center gap-20 md:hidden">
         <section className={`flex flex-col gap-6`}>
           <ul className={`space-y-5`}>
-            {bulletPointsExperience.slice(0, 10).map((item, index) => (
+            {bulletPointsFirstPart.map((item, index) => (
               <li
                 key={index}
                 className={`max-w-[400px] text-sm text-muted-foreground`}
@@ -50,7 +52,7 @@ export const ExperienceCard = () => {
               <AccordionTrigger>Ver Mais</AccordionTrigger>
               <AccordionContent>
                 <ul className={`!list-disc space-y-5`}>
-                  {bulletPointsExperience.slice(10, 25).map((item, index) => (
+                  {bulletPointsSecondPart.map((item, index) => (
                     <li
                       key={index}
                       className={`max-w-[400px] text-sm text-muted-foreground`}
@@ -67,32 +69,26 @@ export const ExperienceCard = () => {
 
       {/* desktop */}
       <CardContent className="hidden justify-center gap-20 md:flex">
-        <section>
-          <ul className={`list-disc space-y-5`}>
-            {bulletPointsExperience.slice(0, 13).map((item, index) => (
-              <li
-                key={index}
-                className={`max-w-[400px] text-sm text-muted-foreground`}
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <ul className={`list-disc space-y-5`}>
-            {bulletPointsExperience.slice(13, 25).map((item, index) => (
-              <li
-                key={index}
-                className={`max-w-[400px] text-sm text-muted-foreground`}
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-        </section>
+        <ListComponent bulletPoints={bulletPointsFirstPart} />
+        <ListComponent bulletPoints={bulletPointsSecondPart} />
       </CardContent>
     </Card>
+  );
+};
+
+const ListComponent = ({ bulletPoints }: { bulletPoints: string[] }) => {
+  return (
+    <section>
+      <ul className={`list-disc space-y-5`}>
+        {bulletPoints.map((item, index) => (
+          <li
+            key={index}
+            className={`max-w-[400px] text-sm text-muted-foreground`}
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
