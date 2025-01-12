@@ -38,14 +38,23 @@ export const Services = () => {
     },
   ];
   return (
-    <article
+    <section
       className={`flex w-full flex-col items-center justify-center gap-10 pt-40`}
     >
-      <h2
-        className={`font-sans text-3xl font-bold uppercase text-foreground/80`}
-      >
-        Meus Serviços
-      </h2>
+      <article className={`flex flex-col items-center gap-4`}>
+        <h2
+          className={`font-sans text-3xl font-bold uppercase text-foreground/80`}
+        >
+          Soluções Completas em Desenvolvimento
+        </h2>
+        <span
+          className={`max-w-[800px] text-center font-mono text-muted-foreground`}
+        >
+          Especializado em criar experiências digitais únicas, integrando
+          design, tecnologia e criatividade para atender às suas necessidades e
+          encantar seus usuários.
+        </span>
+      </article>
       <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-2 xl:grid-cols-4">
         {services.map((service, index) => (
           <Card
@@ -54,18 +63,18 @@ export const Services = () => {
           >
             <CardHeader>
               {service.icon}
-              <h3 className="text-lg font-semibold text-white">
+              <h3 className="text-lg font-semibold text-foreground/90">
                 {service.title}
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm leading-relaxed text-zinc-400">
+              <p className="text-sm leading-relaxed text-muted-foreground">
                 {service.description}
               </p>
             </CardContent>
           </Card>
         ))}
       </div>
-    </article>
+    </section>
   );
 };
