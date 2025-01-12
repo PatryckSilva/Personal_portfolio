@@ -34,7 +34,7 @@ export const Services = () => {
       icon: <Code />,
       title: "Desenvolvimento",
       description:
-        "Trazendo sua visão à vida com as mais recentes tecnologias e tendências em desenvolvimento front end e back end, entregando soluções robustas e escaláveis.",
+        "Criando soluções completas, integrando frontend e backend para garantir desempenho, segurança e experiências de alta qualidade.",
     },
   ];
   return (
