@@ -9,10 +9,10 @@ export function InfiniteCarousel() {
   const imagesDarkTheme = ["next", "express", "github"];
 
   return (
-    <div className="mx-auto w-full overflow-hidden bg-background py-10">
+    <div className="mx-auto w-full overflow-hidden border-y border-border bg-background py-10">
       <div className="flex animate-slide_logos gap-0">
         {IMAGES_OUR_TECHNOLOGIES.map((logo, index) => (
-          <div key={index} className="w-[13%] flex-none px-4">
+          <div key={index} className="w-[25%] flex-none px-4 lg:w-[13%]">
             <Image
               src={logo.url}
               alt={`Logo ${index + 1}`}

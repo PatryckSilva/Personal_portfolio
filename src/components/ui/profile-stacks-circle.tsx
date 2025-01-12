@@ -64,7 +64,7 @@ export const MyStacks = () => {
             ) : (
               <div
                 className={cn(
-                  "cursor-pointer rounded-full border border-foreground bg-cover p-[2px] transition-all duration-500 hover:scale-95 active:scale-95",
+                  "cursor-pointer rounded-full border border-foreground bg-cover p-[2px] shadow-md shadow-black/70 transition-all duration-500 hover:scale-95 active:scale-95",
                   `${logo.className}`,
                 )}
               >
