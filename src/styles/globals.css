@@ -119,3 +119,63 @@ body {
   -webkit-text-fill-color: transparent;
   @apply bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500;
 }
+
+.logos {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.logos:before,
+.logos:after {
+  @apply absolute top-0 h-full w-[85px] md:w-[250px];
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, transparent, hsl(0 0% 100%));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, transparent, hsl(0 0% 100%));
+}
+
+.dark .logos:before {
+  left: 0;
+  background: linear-gradient(to left, transparent, hsl(224 71.4% 4.1%));
+}
+
+.dark .logos:after {
+  right: 0;
+  background: linear-gradient(to right, transparent, hsl(224 71.4% 4.1%));
+}
+
+.logos-slide {
+  animation: 35s slide infinite linear;
+  display: inline-block;
+}
+
+.svg-size {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .svg-size {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

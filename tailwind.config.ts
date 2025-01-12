@@ -67,20 +67,10 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       animation: {
-        slide_testimonials: "80s slide infinite linear",
-        slide_logos: "15s slide infinite linear",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       keyframes: {
-        slide: {
-          "0%": {
-            transform: "translateX(0)",
-          },
-          "100%": {
-            transform: "translateX(-50%)",
-          },
-        },
         "accordion-down": {
           from: {
             height: "0",
