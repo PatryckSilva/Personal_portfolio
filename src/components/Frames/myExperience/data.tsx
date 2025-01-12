@@ -30,7 +30,7 @@ export const bulletPointsEducation = [
   {
     course: "Engenharia de Software",
     company: "Gran Faculdade",
-    link: "",
+    link: "https://faculdade.grancursosonline.com.br/",
     description:
       "Atualmente, estou cursando Engenharia de Software na GRAN Faculdades, onde adquiro conhecimentos teóricos e práticos sobre desenvolvimento de software, análise de sistemas, gestão de projetos e tecnologias emergentes. O curso é estruturado para formar profissionais capacitados a criar soluções tecnológicas inovadoras, combinando habilidades técnicas, pensamento crítico e práticas ágeis. As disciplinas abordam temas como programação, bancos de dados, arquitetura de software e metodologias ágeis, preparando-me para enfrentar os desafios do mercado de trabalho e contribuir para o desenvolvimento de soluções robustas e escaláveis.",
     date: "01/2025 - Atual",
@@ -38,7 +38,7 @@ export const bulletPointsEducation = [
   {
     course: "Pessoa Desenvolvedora Full-stack",
     company: "Generation Brasil",
-    link: "",
+    link: "https://brazil.generation.org/",
     description: (
       <ul>
         <li className={`text-sm text-muted-foreground`}>
@@ -59,7 +59,7 @@ export const bulletPointsEducation = [
   {
     course: "Curso de inglês Imersivo",
     company: "Times Idiomas",
-    link: "",
+    link: "https://timesidiomas.com.br/",
     description: (
       <div className={`flex flex-col gap-2`}>
         <span>

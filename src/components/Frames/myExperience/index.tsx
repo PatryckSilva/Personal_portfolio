@@ -87,11 +87,13 @@ export const MyExperience = () => {
                       <CardTitle>{item.course}</CardTitle>
                       <span className={`font-mediums text-muted-foreground`}>
                         (
-                        <span
+                        <Link
+                          href={item.link}
+                          target="_blank"
                           className={`cursor-pointer underline hover:text-foreground/80`}
                         >
                           {item.company}
-                        </span>
+                        </Link>
                         )
                       </span>
                     </article>
