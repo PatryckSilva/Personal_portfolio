@@ -78,7 +78,7 @@ export function ContextMenuProvider({
         {children}
       </ContextMenuTrigger>
 
-      <ContextMenuContent className="w-64 bg-background/50 backdrop-blur-md">
+      <ContextMenuContent className="w-64 !border-2 !border-border bg-background/50 backdrop-blur-md">
         {/* TODO: adicionar function de copiar link */}
         <ContextMenuItem
           onClick={() => {

@@ -128,7 +128,7 @@ body {
 
 .logos:before,
 .logos:after {
-  @apply absolute top-0 h-full w-[85px] md:w-[250px];
+  @apply absolute top-0 h-full w-[85px] md:w-[150px];
   content: "";
   z-index: 2;
 }
