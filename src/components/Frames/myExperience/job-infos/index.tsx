@@ -31,6 +31,7 @@ export const ExperienceCard = () => {
         </article>
       </CardHeader>
 
+      {/* mobile */}
       <CardContent className="flex justify-center gap-20 md:hidden">
         <section className={`flex flex-col gap-6`}>
           <ul className={`space-y-5`}>
@@ -64,6 +65,7 @@ export const ExperienceCard = () => {
         </section>
       </CardContent>
 
+      {/* desktop */}
       <CardContent className="hidden justify-center gap-20 md:flex">
         <section>
           <ul className={`list-disc space-y-5`}>
@@ -77,6 +79,7 @@ export const ExperienceCard = () => {
             ))}
           </ul>
         </section>
+
         <section>
           <ul className={`list-disc space-y-5`}>
             {bulletPointsExperience.slice(13, 25).map((item, index) => (
