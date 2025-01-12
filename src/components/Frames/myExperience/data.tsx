@@ -31,16 +31,32 @@ export const bulletPointsEducation = [
     course: "Engenharia de Software",
     company: "Gran Faculdade",
     link: "https://faculdade.grancursosonline.com.br/",
-    description:
-      "Atualmente, estou cursando Engenharia de Software na GRAN Faculdades, onde adquiro conhecimentos teóricos e práticos sobre desenvolvimento de software, análise de sistemas, gestão de projetos e tecnologias emergentes. O curso é estruturado para formar profissionais capacitados a criar soluções tecnológicas inovadoras, combinando habilidades técnicas, pensamento crítico e práticas ágeis. As disciplinas abordam temas como programação, bancos de dados, arquitetura de software e metodologias ágeis, preparando-me para enfrentar os desafios do mercado de trabalho e contribuir para o desenvolvimento de soluções robustas e escaláveis.",
+    description: (
+      <div className="flex flex-col gap-4">
+        <span>
+          Atualmente, estou cursando Engenharia de Software na GRAN Faculdades,
+          onde adquiro conhecimentos teóricos e práticos sobre desenvolvimento
+          de software, análise de sistemas, gestão de projetos e tecnologias
+          emergentes.
+        </span>
+        <span>
+          O curso é estruturado para formar profissionais capacitados a criar
+          soluções tecnológicas inovadoras, combinando habilidades técnicas,
+          pensamento crítico e práticas ágeis. As disciplinas abordam temas como
+          programação, bancos de dados, arquitetura de software e metodologias
+          ágeis, preparando-me para enfrentar os desafios do mercado de trabalho
+          e contribuir para o desenvolvimento de soluções robustas e escaláveis.
+        </span>
+      </div>
+    ),
     date: "01/2025 - Atual",
   },
   {
-    course: "Pessoa Desenvolvedora Full-stack",
+    course: "Pessoa Desenvolvedora Fullstack",
     company: "Generation Brasil",
     link: "https://brazil.generation.org/",
     description: (
-      <ul>
+      <ul className={`flex list-disc flex-col gap-4 pl-4`}>
         <li className={`text-sm text-muted-foreground`}>
           Desenvolvimento de aplicação full-stack utilizando Java no back end e
           PostgreSQL como banco de dados.
@@ -61,7 +77,7 @@ export const bulletPointsEducation = [
     company: "Times Idiomas",
     link: "https://timesidiomas.com.br/",
     description: (
-      <div className={`flex flex-col gap-2`}>
+      <div className={`flex flex-col gap-4`}>
         <span>
           Curso de Inglês Imersivo - Foco em Conversação Atualmente participo de
           um curso de inglês imersivo, cujo foco principal é o desenvolvimento
@@ -69,19 +85,17 @@ export const bulletPointsEducation = [
           experiência rica e prática, permitindo que eu aprenda a língua de
           forma dinâmica e envolvente.
         </span>
-        <ul className={`list-disc space-y-5`}>
-          <li className={`text-sm text-muted-foreground`}>
-            Através de atividades interativas, discussões em grupo e simulações
-            da vida real, tenho aprimorado minha fluência e confiança na
-            comunicação em inglês.
-          </li>
+        <span className={`text-sm text-muted-foreground`}>
+          Através de atividades interativas, discussões em grupo e simulações da
+          vida real, tenho aprimorado minha fluência e confiança na comunicação
+          em inglês.
+        </span>
 
-          <li className={`text-sm text-muted-foreground`}>
-            A imersão total no idioma tem ajudado a expandir meu vocabulário e a
-            compreender melhor as nuances da comunicação, preparando-me para
-            interações reais em ambientes profissionais e sociais.
-          </li>
-        </ul>
+        <span className={`text-sm text-muted-foreground`}>
+          A imersão total no idioma tem ajudado a expandir meu vocabulário e a
+          compreender melhor as nuances da comunicação, preparando-me para
+          interações reais em ambientes profissionais e sociais.
+        </span>
       </div>
     ),
     date: "03/2024 - Atual",

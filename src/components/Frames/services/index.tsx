@@ -41,14 +41,14 @@ export const Services = () => {
     <section
       className={`flex w-full flex-col items-center justify-center gap-10 pt-40`}
     >
-      <article className={`flex flex-col items-center gap-4`}>
+      <article className={`flex flex-col items-center gap-4 text-center`}>
         <h2
-          className={`font-sans text-3xl font-bold uppercase text-foreground/80`}
+          className={`font-sans text-2xl font-bold uppercase text-foreground/80 md:text-3xl`}
         >
           Soluções Completas em Desenvolvimento
         </h2>
         <span
-          className={`max-w-[800px] text-center font-mono text-muted-foreground`}
+          className={`nd:max-w-[800px] max-w-[350px] text-center font-mono text-sm text-muted-foreground md:text-base`}
         >
           Especializado em criar experiências digitais únicas, integrando
           design, tecnologia e criatividade para atender às suas necessidades e
