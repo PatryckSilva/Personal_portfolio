@@ -4,7 +4,6 @@ const fullStackXpInfos = [
   "Pesquisa e adoção de novas ferramentas e tecnologias, que otimizaram o processo de desenvolvimento em 10%, demonstrando adaptabilidade a novas estratégias e abordagens.",
   "Colaboração com equipes multifuncionais, incluindo designers e gerentes de produto, para alinhar as funcionalidades do produto com as necessidades dos usuários e os objetivos de negócios, resultando em uma melhoria de 20% na eficiência do processo de desenvolvimento.",
   "Documentação de projetos e criação de guias de uso.",
-  "Desenvolvimento de front end com React Server Components, melhorando a performance da aplicação em até 15%.",
   "Utilização de tecnologias como Styled Components, React Query, Redux Saga, Redux Toolkit, Jest, AWS, Node.js, Prisma, PostgreSQL e Docker.",
   "Experiência em gerenciamento de implementações em larga escala, atendendo às necessidades de uma ampla base de usuários.",
   "Aplicação de princípios de design de software, incluindo SOLID, para garantir a manutenibilidade e escalabilidade das aplicações.",
@@ -27,7 +26,6 @@ const frontEndXpInfos = [
   "Utilização de ferramentas de versionamento de código como Git para gerenciamento de versões e colaboração.",
   "Participação em reuniões de equipe para discutir progressos e planejar novas funcionalidades.",
   "Participação ativa em mais de 10 projetos bem-sucedidos, atraindo milhares de jogadores.",
-  "Assistência na documentação de projetos e na criação de guias de uso para funcionalidades desenvolvidas.",
   "Adaptação a novas ferramentas e tecnologias conforme necessário, demonstrando vontade de aprender e crescer.",
 ];
 
