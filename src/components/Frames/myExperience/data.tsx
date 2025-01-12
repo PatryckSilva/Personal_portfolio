@@ -72,6 +72,33 @@ export const bulletPointsEducation = [
     date: "01/2025 - Atual",
   },
   {
+    course: "Curso de inglês Imersivo",
+    company: "Times Idiomas",
+    link: "https://timesidiomas.com.br/",
+    description: (
+      <div className={`flex flex-col gap-4`}>
+        <span>
+          Atualmente participo de um curso de inglês imersivo, cujo foco
+          principal é o desenvolvimento de habilidades de conversação. Este
+          curso tem me proporcionado uma experiência rica e prática, permitindo
+          que eu aprenda a língua de forma dinâmica e envolvente.
+        </span>
+        <span className={`text-sm text-muted-foreground`}>
+          Através de atividades interativas, discussões em grupo e simulações da
+          vida real, tenho aprimorado minha fluência e confiança na comunicação
+          em inglês.
+        </span>
+
+        <span className={`text-sm text-muted-foreground`}>
+          A imersão total no idioma tem ajudado a expandir meu vocabulário e a
+          compreender melhor as nuances da comunicação, preparando-me para
+          interações reais em ambientes profissionais e sociais.
+        </span>
+      </div>
+    ),
+    date: "03/2024 - Atual",
+  },
+  {
     course: "Pessoa Desenvolvedora Fullstack",
     company: "Generation Brasil",
     link: "https://brazil.generation.org/",
@@ -91,33 +118,5 @@ export const bulletPointsEducation = [
       </ul>
     ),
     date: "03/2022 - 06/2022",
-  },
-  {
-    course: "Curso de inglês Imersivo",
-    company: "Times Idiomas",
-    link: "https://timesidiomas.com.br/",
-    description: (
-      <div className={`flex flex-col gap-4`}>
-        <span>
-          Curso de Inglês Imersivo - Foco em Conversação Atualmente participo de
-          um curso de inglês imersivo, cujo foco principal é o desenvolvimento
-          de habilidades de conversação. Este curso tem me proporcionado uma
-          experiência rica e prática, permitindo que eu aprenda a língua de
-          forma dinâmica e envolvente.
-        </span>
-        <span className={`text-sm text-muted-foreground`}>
-          Através de atividades interativas, discussões em grupo e simulações da
-          vida real, tenho aprimorado minha fluência e confiança na comunicação
-          em inglês.
-        </span>
-
-        <span className={`text-sm text-muted-foreground`}>
-          A imersão total no idioma tem ajudado a expandir meu vocabulário e a
-          compreender melhor as nuances da comunicação, preparando-me para
-          interações reais em ambientes profissionais e sociais.
-        </span>
-      </div>
-    ),
-    date: "03/2024 - Atual",
   },
 ];
