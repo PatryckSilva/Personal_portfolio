@@ -22,7 +22,6 @@ export default function HomeInitialFrame() {
           <aside>
             <MyStacks />
           </aside>
-
           <article className={`flex flex-col items-center gap-10`}>
             <h1 className="flex w-[320px] flex-col items-center text-center text-3xl font-bold leading-relaxed text-foreground lg:w-max lg:text-4xl lg:leading-snug xl:text-5xl">
               Sou Patryck Silva!
@@ -42,7 +41,7 @@ export default function HomeInitialFrame() {
         </section>
 
         <span
-          className={`absolute bottom-5 left-1/2 flex -translate-x-1/2 transform flex-col items-center gap-3 font-mono font-semibold uppercase text-foreground`}
+          className={`text_gradients absolute bottom-5 left-1/2 flex -translate-x-1/2 transform flex-col items-center gap-3 font-mono font-semibold uppercase text-foreground`}
         >
           scroll <DoubleArrowDownIcon className="animate-bounce" />
         </span>
