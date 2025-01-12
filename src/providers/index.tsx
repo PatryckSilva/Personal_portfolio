@@ -1,7 +1,6 @@
 "use client";
 
 import { ContextMenuProvider } from "@/components/contextMenuProvider";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams";
 import { InteractiveBackground } from "@/components/ui/interactive-background";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "next-themes";

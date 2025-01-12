@@ -70,11 +70,8 @@ body {
 }
 
 body {
-  overflow: hidden;
-  height: 100dvh;
   width: screen;
-  max-height: 100dvh;
-  @apply scroll-smooth;
+  @apply overflow-x-hidden scroll-smooth;
 }
 
 ::selection {

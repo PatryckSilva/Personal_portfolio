@@ -42,7 +42,7 @@ export default function HomeInitialFrame() {
         </section>
 
         <span
-          className={`absolute bottom-5 left-1/2 flex -translate-x-1/2 transform flex-col items-center gap-3 font-semibold uppercase text-foreground`}
+          className={`absolute bottom-5 left-1/2 flex -translate-x-1/2 transform flex-col items-center gap-3 font-mono font-semibold uppercase text-foreground`}
         >
           scroll <DoubleArrowDownIcon className="animate-bounce" />
         </span>

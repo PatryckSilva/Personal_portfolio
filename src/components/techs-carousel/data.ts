@@ -1,0 +1,86 @@
+export const IMAGES_OUR_TECHNOLOGIES = [
+  {
+    url: "https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png",
+    alt: "Redis",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://logodownload.org/wp-content/uploads/2022/12/figma-logo-2.png",
+    alt: "Figma",
+    w: 150,
+    h: 229,
+  },
+  {
+    url: "https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png",
+    alt: "Tailwind CSS",
+    w: 150,
+    h: 90,
+  },
+  {
+    url: "https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-1.png",
+    alt: "Javascript",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_prisma_icon_130444.png",
+    alt: "Prisma",
+    w: 150,
+    h: 84,
+  },
+  {
+    url: "https://logospng.org/download/typescript/typescript-4096.png",
+    alt: "Typescript",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://logospng.org/download/react/logo-react-1024.png",
+    alt: "React",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://logodix.com/logo/1764875.png",
+    alt: "Node",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://cdn.freelogovectors.net/wp-content/uploads/2023/09/next-js-logo-freelogovectors.net_.png",
+    alt: "Next",
+    w: 150,
+    h: 100,
+  },
+  {
+    url: "https://res.cloudinary.com/dytzyiahx/image/upload/v1616752800/Nest_JS_50c6e1d56c.png",
+    alt: "Nest",
+    w: 150,
+    h: 53,
+  },
+  {
+    url: "https://www.alpha.net.bd/Content/img/partners/express.png",
+    alt: "Express",
+    w: 150,
+    h: 92,
+  },
+  {
+    url: "https://th.bing.com/th/id/R.eb7df8b6f223f785d829106d64846d58?rik=ebxvvZV5DleHVw&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f62a9c7c08ff6441a2952dad3.png&ehk=2KxN3X3xsI5qTH7pSLQZEkwG8hLGqQShX19Slol5E1c%3d&risl=&pid=ImgRaw&r=0",
+    alt: "Docker",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://logospng.org/download/git/git-2048.png",
+    alt: "Git",
+    w: 150,
+    h: 150,
+  },
+  {
+    url: "https://static.vecteezy.com/system/resources/previews/024/555/459/original/github-logo-black-transparent-free-png.png",
+    alt: "Github",
+    w: 150,
+    h: 150,
+  },
+];
