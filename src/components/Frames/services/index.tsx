@@ -48,14 +48,14 @@ export const Services = () => {
           Soluções Completas em Desenvolvimento
         </h2>
         <span
-          className={`nd:max-w-[800px] max-w-[350px] text-center font-mono text-sm text-muted-foreground md:text-base`}
+          className={`max-w-[350px] text-center font-mono text-sm text-muted-foreground md:max-w-[700px] md:text-base lg:max-w-[800px]`}
         >
           Especializado em criar experiências digitais únicas, integrando
           design, tecnologia e criatividade para atender às suas necessidades e
           encantar seus usuários.
         </span>
       </article>
-      <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-3 xl:grid-cols-4">
         {services.map((service, index) => (
           <Card
             key={index}
