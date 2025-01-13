@@ -17,14 +17,10 @@ import {
   Share1Icon,
 } from "@radix-ui/react-icons";
 import { links } from "@/utils/constants";
-import {
-  HomeIcon,
-  MessageIcon,
-  PersonIcons,
-  ProjectsIcon,
-} from "../navbar/nav-icons";
+import { MessageIcon } from "../navbar/nav-icons";
 import { useToast } from "@/hooks/use-toast";
 import { useTheme } from "next-themes";
+import { ModeToggle } from "../Theme/ModeToggle";
 
 export function ContextMenuProvider({
   children,
@@ -35,21 +31,21 @@ export function ContextMenuProvider({
   const { theme, setTheme } = useTheme();
 
   const pages = [
-    {
-      name: "Home",
-      link: "/",
-      icon: <HomeIcon fontSize={18} />,
-    },
-    {
-      name: "Projetos",
-      link: "/projects",
-      icon: <ProjectsIcon fontSize={18} />,
-    },
-    {
-      name: "About",
-      link: "/about",
-      icon: <PersonIcons fontSize={18} />,
-    },
+    // {
+    //   name: "Home",
+    //   link: "/",
+    //   icon: <HomeIcon fontSize={18} />,
+    // },
+    // {
+    //   name: "Projetos",
+    //   link: "/projects",
+    //   icon: <ProjectsIcon fontSize={18} />,
+    // },
+    // {
+    //   name: "About",
+    //   link: "/about",
+    //   icon: <PersonIcons fontSize={18} />,
+    // },
     {
       name: "Contact",
       link: "/contact",
@@ -88,7 +84,7 @@ export function ContextMenuProvider({
         >
           Trocar Tema
           <ContextMenuShortcut className="text-foreground">
-            <Share1Icon fontSize={30} />
+            <ModeToggle />
           </ContextMenuShortcut>
         </ContextMenuItem>
 
