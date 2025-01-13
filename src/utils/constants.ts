@@ -2,7 +2,7 @@ export enum links {
   linkedin = "https://www.linkedin.com/in/patryck-silva/",
   github = "https://github.com/PatryckSilva",
   portfolioCode = "https://github.com/PatryckSilva/Personal_portfolio",
-  portfolioWeb = "/",
+  portfolioWeb = "https://patrycksilva.com",
   gran = "https://faculdade.grancursosonline.com.br/",
   times = "https://timesidiomas.com.br/",
   generation = "https://brazil.generation.org/",

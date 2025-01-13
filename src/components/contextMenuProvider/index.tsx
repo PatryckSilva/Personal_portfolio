@@ -17,10 +17,11 @@ import {
   Share1Icon,
 } from "@radix-ui/react-icons";
 import { links } from "@/utils/constants";
-import { MessageIcon } from "../navbar/nav-icons";
+import { MessageIcon } from "../SVGS/nav-icons";
 import { useToast } from "@/hooks/use-toast";
 import { useTheme } from "next-themes";
 import { ModeToggle } from "../Theme/ModeToggle";
+import { useCopyAction } from "@/hooks/use-copy-action";
 
 export function ContextMenuProvider({
   children,
@@ -29,6 +30,7 @@ export function ContextMenuProvider({
 }) {
   const { toast } = useToast();
   const { theme, setTheme } = useTheme();
+  const { handleCopy, isCopied } = useCopyAction();
 
   const pages = [
     // {
@@ -84,12 +86,12 @@ export function ContextMenuProvider({
         >
           Trocar Tema
           <ContextMenuShortcut className="text-foreground">
-            <ModeToggle />
+            <ModeToggle className="h-fit w-fit" />
           </ContextMenuShortcut>
         </ContextMenuItem>
 
-        <ContextMenuItem inset>
-          Copiar Link
+        <ContextMenuItem onClick={() => handleCopy(links.portfolioWeb)} inset>
+          {isCopied ? "Copiado!" : "Copiar Link"}
           <ContextMenuShortcut className={`text-foreground`}>
             <Share1Icon fontSize={30} />
           </ContextMenuShortcut>
