@@ -20,24 +20,9 @@ export const ExperienceSection = ({
   experience: (typeof experiences)[0];
 }) => (
   <Card className="max-w-[1000px] border-none px-2 shadow-none">
-    <CardHeader>
-      <article className="flex w-full items-center justify-between">
-        <CardTitle className="flex flex-col gap-2">
-          <Link
-            href={experience.link}
-            target="_blank"
-            className="text-lg underline transition-all hover:text-foreground/50"
-          >
-            {experience.company}
-          </Link>
-          <span className="text-sm text-foreground/90">{experience.role}</span>
-        </CardTitle>
-        <span className="font-mono text-sm font-medium text-muted-foreground">
-          {experience.date}
-        </span>
-      </article>
-    </CardHeader>
-
+    <CardTitle className="mb-2 text-lg font-semibold text-muted-foreground underline transition-all">
+      Atividades:{" "}
+    </CardTitle>
     <CardContent className="flex justify-center gap-20">
       <ListComponent bulletPoints={experience.activities} />
     </CardContent>

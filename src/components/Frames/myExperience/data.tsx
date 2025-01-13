@@ -126,7 +126,8 @@ export const bulletPointsEducation = [
 
 export const dataExperience = [
   {
-    // title: "Apex NFT Brasil",
+    title: "Apex NFT Brasil",
+    subtitle: "Full-stack Developer",
     content: (
       <section className="flex flex-col gap-10 lg:max-w-[1200px]">
         {experiences.slice(0, 1).map((item, index) => (
@@ -134,9 +135,12 @@ export const dataExperience = [
         ))}
       </section>
     ),
+    link: links.apexWeb,
+    date: "06/2023 - Atual",
   },
   {
-    // title: "2025",
+    title: "Apex NFT Brasil",
+    subtitle: "Front-end Developer",
     content: (
       <section className="flex flex-col gap-10 lg:max-w-[1200px]">
         {experiences.slice(1, 2).map((item, index) => (
@@ -144,5 +148,7 @@ export const dataExperience = [
         ))}
       </section>
     ),
+    link: links.apexWeb,
+    date: "06/2022 - 06/2023",
   },
 ];

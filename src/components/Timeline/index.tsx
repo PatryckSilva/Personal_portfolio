@@ -6,10 +6,15 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { CardHeader, CardTitle } from "../ui/card";
+import Link from "next/link";
 
 interface TimelineEntry {
-  title?: string;
+  title: string;
   content: React.ReactNode;
+  subtitle: string;
+  link: string;
+  date: string;
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -33,27 +38,57 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full md:px-10" ref={containerRef}>
+    <div className="h-full w-full md:px-10" ref={containerRef}>
       <div ref={ref} className="relative mx-auto max-w-[1200px] pb-20">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-10 md:gap-10">
-            <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-[0px]">
+            <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-[350px]">
               <div className="absolute left-3 flex size-10 scale-75 items-center justify-center rounded-full border border-border bg-primary/60 md:left-3">
                 <div className="size-4 rounded-full border bg-muted p-2" />
               </div>
-              {item.title && (
-                <h3 className="hidden text-xl font-bold text-neutral-500 dark:text-neutral-500 md:block md:pl-20 md:text-4xl">
-                  {item.title}
-                </h3>
-              )}
+              <CardHeader className={`hidden md:block md:pl-20 md:text-4xl`}>
+                <article className="flex w-full flex-col items-start justify-start">
+                  <CardTitle className="flex flex-col gap-2">
+                    <Link
+                      href={item.link}
+                      target="_blank"
+                      className="text-3xl font-bold text-neutral-500 transition-all dark:text-neutral-500"
+                    >
+                      {item.title}
+                    </Link>
+                    <span className="text-lg text-foreground/90">
+                      {item.subtitle}
+                    </span>
+                  </CardTitle>
+                  <span className="font-mono text-sm font-medium text-muted-foreground">
+                    {item.date}
+                  </span>
+                </article>
+              </CardHeader>
             </div>
 
-            <div className="relative w-full pl-10 pr-0 md:pl-4">
-              {item.title && (
-                <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500 md:hidden">
-                  {item.title}
-                </h3>
-              )}
+            <div className="relative w-full pl-14 pr-0 md:pl-4">
+              <CardHeader
+                className={`mb-4 block md:hidden md:pl-20 md:text-4xl`}
+              >
+                <article className="flex w-full flex-col items-start justify-start">
+                  <CardTitle className="flex flex-col gap-2">
+                    <Link
+                      href={item.link}
+                      target="_blank"
+                      className="text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500"
+                    >
+                      {item.title}
+                    </Link>
+                    <span className="text-lg text-foreground/90">
+                      {item.subtitle}
+                    </span>
+                  </CardTitle>
+                  <span className="font-mono text-sm font-medium text-muted-foreground">
+                    {item.date}
+                  </span>
+                </article>
+              </CardHeader>
               {item.content}{" "}
             </div>
           </div>
