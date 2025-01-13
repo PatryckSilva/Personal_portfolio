@@ -70,22 +70,22 @@ export const ProjectsFrame = () => {
               </CarouselContent>
 
               <div className={`hidden md:block`}>
-                <CarouselPrevious className={`bg-primary`} />
+                <CarouselPrevious className={`bg-primary text-white`} />
 
-                <CarouselNext className={`bg-primary`} />
+                <CarouselNext className={`bg-primary text-white`} />
               </div>
 
               <div className={`md:hidden`}>
                 <button
                   className={`absolute bottom-1/2 left-10 -translate-y-1/2`}
                 >
-                  <CarouselPrevious className={`bg-primary`} />
+                  <CarouselPrevious className={`bg-primary text-white`} />
                 </button>
 
                 <button
                   className={`absolute bottom-1/2 right-10 -translate-y-1/2`}
                 >
-                  <CarouselNext className={`bg-primary`} />
+                  <CarouselNext className={`bg-primary text-white`} />
                 </button>
               </div>
             </Carousel>
