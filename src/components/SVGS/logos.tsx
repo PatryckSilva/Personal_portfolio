@@ -143,7 +143,7 @@ export const ProfileCard = () => {
         <span className="inline-block size-full">
           <figure className={`relative size-full overflow-hidden rounded-full`}>
             <Image
-              src={"/images/stacks/image.webp"}
+              src={"/images/stacks/eu.jpg"}
               alt="Profile Picture"
               fill={true}
             />
