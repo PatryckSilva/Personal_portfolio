@@ -4,7 +4,7 @@ import { EducationCards } from "./ed-infos";
 export const MyExperience = () => {
   return (
     <section
-      className={`flex min-h-[100dvh] w-full flex-col items-center justify-start gap-10 px-4 pt-20`}
+      className={`flex w-full flex-col items-center justify-start gap-10 px-4 pt-20`}
     >
       <article className={`flex flex-col items-center gap-4`}>
         <h3
