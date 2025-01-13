@@ -9,7 +9,7 @@ export const Footer = () => {
       className={`flex h-20 w-full items-center justify-evenly gap-5 border-t border-border bg-background`}
     >
       <aside>
-        <span>
+        <span className={`text-sm font-medium md:text-base`}>
           © 2024{" "}
           <Link
             href={links.linkedin}
