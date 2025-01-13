@@ -69,7 +69,7 @@ const PersonalProjectsCard = ({
 
           {isHovered && (
             <div
-              className={`absolute inset-0 z-10 size-full bg-black/60`}
+              className={`absolute inset-0 z-10 size-full rounded-md bg-black/60`}
             ></div>
           )}
         </figure>
