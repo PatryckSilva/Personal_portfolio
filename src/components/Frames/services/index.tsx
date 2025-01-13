@@ -26,7 +26,7 @@ export const Services = () => {
       icon: <Code />,
       title: "Desenvolvimento",
       description:
-        "Criando soluções completas, integrando frontend e backend para garantir desempenho, segurança e experiências de alta qualidade.",
+        "Criando soluções completas, integrando front end e back end para garantir desempenho, segurança e experiências de alta qualidade.",
     },
   ];
   return (

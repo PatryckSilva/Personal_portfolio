@@ -12,7 +12,7 @@ import {
 export const ProjectsFrame = () => {
   return (
     <section
-      className={`flex w-full flex-col items-center justify-start gap-10 px-4 py-20`}
+      className={`flex w-full flex-col items-center justify-start gap-10 px-4 pt-20`}
     >
       <article className="flex flex-col items-center gap-4">
         <h4
@@ -24,14 +24,15 @@ export const ProjectsFrame = () => {
         <span
           className={`max-w-[350px] text-center font-mono text-sm text-muted-foreground md:max-w-[700px] md:text-base lg:max-w-[800px]`}
         >
-          Entre em contato para falar sobre oportunidades, projetos ou apenas
-          dizer um oi!
+          Explore projetos que representaram minhas contribuições e interesses.
         </span>
       </article>
+
       <Tabs defaultValue="mine" className={`space-y-5`}>
         {/* TODO: grid-cols-2 após adicionar aba de collab */}
         <TabsList className="grid w-full grid-cols-1">
           <TabsTrigger value="mine">Meus Projetos Pessoais</TabsTrigger>
+
           {/* <TabsTrigger value="collab">Minhas colaborações</TabsTrigger> */}
         </TabsList>
 
@@ -67,19 +68,22 @@ export const ProjectsFrame = () => {
                   ),
                 )}
               </CarouselContent>
-              <div className={`hidden lg:block`}>
+
+              <div className={`hidden md:block`}>
                 <CarouselPrevious className={`bg-primary`} />
+
                 <CarouselNext className={`bg-primary`} />
               </div>
 
-              <div className={`lg:hidden`}>
+              <div className={`md:hidden`}>
                 <button
-                  className={`absolute -bottom-8 left-1/2 -translate-x-1/2`}
+                  className={`absolute bottom-1/2 left-10 -translate-y-1/2`}
                 >
                   <CarouselPrevious className={`bg-primary`} />
                 </button>
+
                 <button
-                  className={`absolute -bottom-8 right-1/2 -translate-x-1/2`}
+                  className={`absolute bottom-1/2 right-10 -translate-y-1/2`}
                 >
                   <CarouselNext className={`bg-primary`} />
                 </button>

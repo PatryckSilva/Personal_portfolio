@@ -21,18 +21,18 @@ export const SocialMediasButtons = () => {
     },
     {
       name: "Gmail",
-      link: "",
+      link: "/#contact",
       icon: <DarkGmailLogo />,
     },
   ];
 
   return (
     <aside className={`flex items-end gap-3`}>
-      {socialMedias.map((item) => (
+      {socialMedias.map((item, index) => (
         <Link
           key={item.name}
           href={item.link}
-          target="_blank"
+          target={index === 2 ? "_self" : "_blank"}
           className={cn(
             `h-max w-8 text-foreground/70 transition-transform duration-300 ease-in-out hover:scale-110 hover:text-foreground`,
           )}

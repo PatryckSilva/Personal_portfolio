@@ -71,6 +71,7 @@ body {
 
 body {
   width: screen;
+  scroll-behavior: smooth !important;
   @apply overflow-x-hidden scroll-smooth;
 }
 

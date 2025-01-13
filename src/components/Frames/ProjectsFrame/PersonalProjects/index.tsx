@@ -28,9 +28,11 @@ const PersonalProjectsCard = ({
     <Card className={`w-full border`}>
       <CardHeader className={`flex gap-2`}>
         <CardTitle>{projectName}</CardTitle>
+
         <CardDescription className={`leading-relaxed`}>
           {projectDescription}
         </CardDescription>
+
         <div className={`flex w-full flex-wrap items-center gap-2`}>
           {techs.map((item, index) => (
             <Badge key={index} variant="default">
@@ -44,7 +46,7 @@ const PersonalProjectsCard = ({
         <figure
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
-          className={`relative h-[171px] w-[350px] transition-all md:h-[245px] md:w-[500px] lg:h-[343px] lg:w-[700px]`}
+          className={`relative h-[546px] w-[350px] transition-all md:h-[245px] md:w-[500px] lg:h-[343px] lg:w-[700px]`}
         >
           {isHovered && (
             <div className={`relative size-full`}>
@@ -63,12 +65,8 @@ const PersonalProjectsCard = ({
             </div>
           )}
 
-          <Image
-            src={srcImage}
-            fill
-            alt={`${projectName} - Captura de Tela`}
-            className={`rounded-md border border-border`}
-          />
+          <ProjectImage projectName={projectName} srcImage={srcImage} />
+
           {isHovered && (
             <div
               className={`absolute inset-0 z-10 size-full bg-black/60`}
@@ -81,3 +79,32 @@ const PersonalProjectsCard = ({
 };
 
 export default memo(PersonalProjectsCard);
+
+const ProjectImage = ({
+  srcImage,
+  projectName,
+}: {
+  srcImage: string;
+  projectName: string;
+}) => {
+  const src = srcImage.split(".")[0];
+  const extension = srcImage.split(".")[1];
+  console.log(`src`, src);
+  return (
+    <>
+      <Image
+        src={`${srcImage}`}
+        fill
+        alt={`${projectName} - Captura de Tela`}
+        className={`rounded-md border border-border`}
+      />
+
+      <Image
+        src={`${src}-mobile.${extension}`}
+        fill
+        alt={`${projectName} - Captura de Tela`}
+        className={`rounded-md border border-border md:hidden`}
+      />
+    </>
+  );
+};

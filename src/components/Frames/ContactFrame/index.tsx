@@ -3,6 +3,7 @@ import { ContactForm } from "./form";
 export const ContactFrame = () => {
   return (
     <section
+      id="contact"
       className={`flex w-full flex-col items-center justify-start gap-10 px-4 py-20`}
     >
       <article className="flex flex-col items-center gap-4">
