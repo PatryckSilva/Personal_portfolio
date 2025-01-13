@@ -40,7 +40,7 @@ export const techList = [
   {
     name: "Express.Js",
     icon: SiExpress,
-    color: "#fff5",
+    color: "#3f3f46",
   },
   {
     name: "Nest.Js",
