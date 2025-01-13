@@ -6,7 +6,7 @@ export const ExperienceCard = () => {
   return (
     <section className={`flex flex-col gap-10 lg:max-w-[1200px]`}>
       {experiences.map((item, index) => (
-        <Card key={index} className={`border-border px-2`}>
+        <Card key={index} className={`border px-2`}>
           <CardHeader>
             <article className={`flex w-full items-center justify-between`}>
               <CardTitle className={`flex flex-col gap-2`}>

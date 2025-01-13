@@ -13,7 +13,7 @@ export const EducationCards = () => {
       {bulletPointsEducation.map((item) => (
         <Card
           key={item.course}
-          className={`border-border md:max-w-[350px] lg:max-w-max xl:max-w-[400px]`}
+          className={`md:max-w-[350px] lg:max-w-max xl:max-w-[400px]`}
         >
           <CardHeader>
             <div className={`flex items-center justify-between`}>

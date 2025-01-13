@@ -100,7 +100,7 @@ export function ContextMenuProvider({
         </ContextMenuItem>
 
         <Link
-          href={links.portfolioRepoLink}
+          href={links.portfolioWeb}
           target="_blank"
           className={`cursor-pointer`}
         >

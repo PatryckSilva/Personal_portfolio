@@ -1,3 +1,5 @@
+import { links } from "@/utils/constants";
+
 const fullStackXpInfos = [
   "Participação em revisões de código (Code Reviews), fornecendo feedback construtivo, com comunicação aberta e colaboração, promovendo uma melhora da qualidade do código em 25%.",
   "Contribuição em discussões estratégicas para definição de regras de negócios e soluções técnicas.",
@@ -35,14 +37,14 @@ export const experiences = [
     company: "Apex NFT Brasil",
     date: "06/2023 - Atual",
     activities: fullStackXpInfos,
-    link: "https://apex-new-site-2024.vercel.app/",
+    link: links.apexWeb,
   },
   {
     role: "Front-end Developer",
     company: "Apex NFT Brasil",
     date: "06/2022 - 06/2023",
     activities: frontEndXpInfos,
-    link: "https://apex-new-site-2024.vercel.app/",
+    link: links.apexWeb,
   },
 ];
 
@@ -50,7 +52,7 @@ export const bulletPointsEducation = [
   {
     course: "Engenharia de Software",
     company: "Gran Faculdade",
-    link: "https://faculdade.grancursosonline.com.br/",
+    link: links.gran,
     description: (
       <div className="flex flex-col gap-4">
         <span>
@@ -74,7 +76,7 @@ export const bulletPointsEducation = [
   {
     course: "Curso de inglês Imersivo",
     company: "Times Idiomas",
-    link: "https://timesidiomas.com.br/",
+    link: links.times,
     description: (
       <div className={`flex flex-col gap-4`}>
         <span>
@@ -101,7 +103,7 @@ export const bulletPointsEducation = [
   {
     course: "Pessoa Desenvolvedora Fullstack",
     company: "Generation Brasil",
-    link: "https://brazil.generation.org/",
+    link: links.generation,
     description: (
       <ul className={`flex list-disc flex-col gap-4 pl-4`}>
         <li className={`text-sm text-muted-foreground`}>

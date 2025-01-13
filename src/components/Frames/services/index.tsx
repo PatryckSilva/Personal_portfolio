@@ -51,7 +51,7 @@ export const Services = () => {
         {services.map((service, index) => (
           <Card
             key={index}
-            className="h-[300px] w-[250px] border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:bg-muted"
+            className="h-[300px] w-[250px] border bg-background transition-all duration-300 hover:-translate-y-1 hover:bg-muted"
           >
             <CardHeader>
               {service.icon}
