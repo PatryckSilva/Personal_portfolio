@@ -1,4 +1,5 @@
 import { links } from "@/utils/constants";
+import { ExperienceSection } from "./job-infos";
 
 const fullStackXpInfos = [
   "Participação em revisões de código (Code Reviews), fornecendo feedback construtivo, com comunicação aberta e colaboração, promovendo uma melhora da qualidade do código em 25%.",
@@ -120,5 +121,28 @@ export const bulletPointsEducation = [
       </ul>
     ),
     date: "03/2022 - 06/2022",
+  },
+];
+
+export const dataExperience = [
+  {
+    // title: "Apex NFT Brasil",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        {experiences.slice(0, 1).map((item, index) => (
+          <ExperienceSection key={index} experience={item} />
+        ))}
+      </section>
+    ),
+  },
+  {
+    // title: "2025",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        {experiences.slice(1, 2).map((item, index) => (
+          <ExperienceSection key={index} experience={item} />
+        ))}
+      </section>
+    ),
   },
 ];

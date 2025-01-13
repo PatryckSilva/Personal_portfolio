@@ -1,6 +1,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ExperienceCard } from "./job-infos";
 import { EducationCards } from "./ed-infos";
+import { dataExperience, experiences } from "./data";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import { Timeline } from "@/components/Timeline";
 export const MyExperience = () => {
   return (
     <section
@@ -26,13 +29,30 @@ export const MyExperience = () => {
         </TabsList>
 
         <TabsContent value="xp">
-          <ExperienceCard />
+          <Card>
+            <div className="w-full">
+              <Timeline data={dataExperience} />
+            </div>
+          </Card>
         </TabsContent>
 
         <TabsContent value="ed">
           <EducationCards />
         </TabsContent>
       </Tabs>
+    </section>
+  );
+};
+const ListComponent = ({ bulletPoints }: { bulletPoints: string[] }) => {
+  return (
+    <section>
+      <ul className={`list-disc space-y-5`}>
+        {bulletPoints.map((item, index) => (
+          <li key={index} className={`text-sm text-muted-foreground`}>
+            {item}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
