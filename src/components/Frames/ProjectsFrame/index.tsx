@@ -38,7 +38,7 @@ export const ProjectsFrame = () => {
 
         <TabsContent value="mine">
           <section
-            className={`flex w-full max-w-[400px] flex-col justify-center gap-10 md:max-w-[600px] lg:max-w-[850px]`}
+            className={`xs:max-w-[400px] flex w-full max-w-[350px] flex-col justify-center gap-10 md:max-w-[600px] lg:max-w-[850px]`}
           >
             <Carousel>
               <CarouselContent>
