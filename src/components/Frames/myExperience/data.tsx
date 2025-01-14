@@ -2,23 +2,21 @@ import { links } from "@/utils/constants";
 import { ExperienceSection } from "./job-infos";
 
 const fullStackXpInfos = [
-  "Participação em revisões de código (Code Reviews), fornecendo feedback construtivo, com comunicação aberta e colaboração, promovendo uma melhora da qualidade do código em 25%.",
+  "Participação em revisões de código, fornecendo feedback construtivo e promovendo a melhora da qualidade do código em 25%.",
   "Contribuição em discussões estratégicas para definição de regras de negócios e soluções técnicas.",
-  "Pesquisa e adoção de novas ferramentas e tecnologias, que otimizaram o processo de desenvolvimento em 10%, demonstrando adaptabilidade a novas estratégias e abordagens.",
-  "Colaboração com equipes multifuncionais, incluindo designers e gerentes de produto, para alinhar as funcionalidades do produto com as necessidades dos usuários e os objetivos de negócios, resultando em uma melhoria de 20% na eficiência do processo de desenvolvimento.",
+  "Pesquisa e adoção de ferramentas e tecnologias que otimizaram o processo de desenvolvimento em 10%.",
+  "Colaboração com equipes multifuncionais para alinhar funcionalidades com objetivos de negócios, melhorando a eficiência em 20%.",
   "Documentação de projetos e criação de guias de uso.",
-  "Utilização de tecnologias como Styled Components, React Query, Redux Saga, Redux Toolkit, Jest, AWS, Node.js, Prisma, PostgreSQL e Docker.",
-  "Experiência em gerenciamento de implementações em larga escala, atendendo às necessidades de uma ampla base de usuários.",
+  "Desenvolvimento com Styled Components, React Query, Redux Toolkit, Jest, AWS, Node.js, Prisma, PostgreSQL, Docker e Strapi.",
+  "Gerenciamento de implementações em larga escala, garantindo manutenibilidade e escalabilidade.",
   "Aplicação de princípios de design de software, incluindo SOLID, para garantir a manutenibilidade e escalabilidade das aplicações.",
-  "Desenvolvimento de APIs robustas e eficientes, permitindo a integração de dados de serviços externos em nossos aplicativos, com uso eficiente de diferentes métodos de autenticação, manipulação de dados JSON e implementação de estratégias no tratamento de erros.",
+  "Criação de APIs robustas e eficientes com autenticação, manipulação de dados JSON e tratamento de erros.",
   "Implementação de endpoints e manutenção dos existentes utilizando Node.js com Express e NestJS.",
-  "Implementação de testes automatizados que reduziram os erros em produção em 30%.",
-  "Desenvolvimento de rotas com filtragem e paginação para otimização de performance.",
-  "Implementação de memory-cache para melhorar a eficiência das consultas.",
+  "Implementação de testes automatizados que reduziram erros em produção em 30%.",
+  "Otimização de rotas com filtragem e paginação, além de melhorias no desempenho com estratégias de cache (Redis e memory-cache).",
   "Integração com banco de dados utilizando Prisma.",
-  "Implementação de cache com Redis e uso como banco de dados temporário.",
-  "Criação e gerenciamento de cron jobs para automatizar tarefas recorrentes, aumentando a eficiência operacional e reduzindo a necessidade de intervenções manuais.",
-  "Utilização do headless CMS Strapi para gerenciar e estruturar conteúdos de forma eficiente, otimizando a integração com aplicações front-end.",
+  "Automação de tarefas recorrentes com cron jobs.",
+  "Utilização do headless CMS Strapi para gerenciar e estruturar conteúdos de forma eficiente.",
 ];
 
 const frontEndXpInfos = [
@@ -46,6 +44,35 @@ export const experiences = [
     date: "06/2022 - 06/2023",
     activities: frontEndXpInfos,
     link: links.apexWeb,
+  },
+];
+
+export const dataExperience = [
+  {
+    title: "Apex NFT Brasil",
+    subtitle: "Full-stack Developer",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        {experiences.slice(0, 1).map((item, index) => (
+          <ExperienceSection key={index} experience={item} />
+        ))}
+      </section>
+    ),
+    link: links.apexWeb,
+    date: "06/2023 - Atual",
+  },
+  {
+    title: "Apex NFT Brasil",
+    subtitle: "Front-end Developer",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        {experiences.slice(1, 2).map((item, index) => (
+          <ExperienceSection key={index} experience={item} />
+        ))}
+      </section>
+    ),
+    link: links.apexWeb,
+    date: "06/2022 - 06/2023",
   },
 ];
 
@@ -121,34 +148,5 @@ export const bulletPointsEducation = [
       </ul>
     ),
     date: "03/2022 - 06/2022",
-  },
-];
-
-export const dataExperience = [
-  {
-    title: "Apex NFT Brasil",
-    subtitle: "Full-stack Developer",
-    content: (
-      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
-        {experiences.slice(0, 1).map((item, index) => (
-          <ExperienceSection key={index} experience={item} />
-        ))}
-      </section>
-    ),
-    link: links.apexWeb,
-    date: "06/2023 - Atual",
-  },
-  {
-    title: "Apex NFT Brasil",
-    subtitle: "Front-end Developer",
-    content: (
-      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
-        {experiences.slice(1, 2).map((item, index) => (
-          <ExperienceSection key={index} experience={item} />
-        ))}
-      </section>
-    ),
-    link: links.apexWeb,
-    date: "06/2022 - 06/2023",
   },
 ];
