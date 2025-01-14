@@ -43,7 +43,7 @@ export const experiences = [
     company: "Apex NFT Brasil",
     date: "06/2022 - 06/2023",
     activities: frontEndXpInfos,
-    link: links.apexWeb,
+    link: links.apexNft,
   },
 ];
 

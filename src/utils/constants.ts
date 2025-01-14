@@ -7,6 +7,7 @@ export enum links {
   times = "https://timesidiomas.com.br/",
   generation = "https://brazil.generation.org/",
   apexWeb = "https://apex-new-site-2024.vercel.app/",
+  apexNft = "https://apexnft.com.br/",
   koscakWeb = "https://www.pauloisidorokoscak.com.br/",
   koscakCode = "https://github.com/PatryckSilva/koscak-website",
   natsWeb = "https://nats-feedback.vercel.app/",
