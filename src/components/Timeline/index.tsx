@@ -52,7 +52,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     <Link
                       href={item.link}
                       target="_blank"
-                      className="text-3xl font-bold text-neutral-500 transition-all dark:text-neutral-500"
+                      className="text-3xl font-bold text-neutral-500 underline transition-all dark:text-neutral-500"
                     >
                       {item.title}
                     </Link>
@@ -76,7 +76,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     <Link
                       href={item.link}
                       target="_blank"
-                      className="text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500"
+                      className="text-left text-2xl font-bold text-neutral-500 underline dark:text-neutral-500"
                     >
                       {item.title}
                     </Link>
