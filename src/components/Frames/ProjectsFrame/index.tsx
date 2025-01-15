@@ -1,13 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { personalProjectsInfos } from "./data";
 import PersonalProjectsCard from "./PersonalProjects";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 export const ProjectsFrame = () => {
   return (
@@ -38,57 +31,19 @@ export const ProjectsFrame = () => {
 
         <TabsContent value="mine">
           <section
-            className={`xs:max-w-[400px] flex w-full max-w-[350px] flex-col justify-center gap-10 md:max-w-[600px] lg:max-w-[850px]`}
+            className={`flex w-full max-w-[1000px] flex-col justify-center gap-10`}
           >
-            <Carousel>
-              <CarouselContent>
-                {personalProjectsInfos.map(
-                  (
-                    {
-                      projectDescription,
-                      projectName,
-                      srcImage,
-                      code,
-                      link,
-                      techs,
-                    },
-                    index,
-                  ) => (
-                    <CarouselItem key={index}>
-                      <PersonalProjectsCard
-                        projectDescription={projectDescription}
-                        key={projectName}
-                        projectName={projectName}
-                        srcImage={srcImage}
-                        code={code}
-                        link={link}
-                        techs={techs}
-                      />
-                    </CarouselItem>
-                  ),
-                )}
-              </CarouselContent>
-
-              <div className={`hidden md:block`}>
-                <CarouselPrevious className={`bg-primary text-white`} />
-
-                <CarouselNext className={`bg-primary text-white`} />
-              </div>
-
-              <div className={`md:hidden`}>
-                <button
-                  className={`absolute bottom-1/2 left-10 -translate-y-1/2`}
-                >
-                  <CarouselPrevious className={`bg-primary text-white`} />
-                </button>
-
-                <button
-                  className={`absolute bottom-1/2 right-10 -translate-y-1/2`}
-                >
-                  <CarouselNext className={`bg-primary text-white`} />
-                </button>
-              </div>
-            </Carousel>
+            {personalProjectsInfos.map((item, index) => (
+              <PersonalProjectsCard
+                projectDescription={item.projectDescription}
+                key={index}
+                projectName={item.projectName}
+                srcImage={item.srcImage}
+                code={item.code}
+                link={item.link}
+                techs={item.techs}
+              />
+            ))}
           </section>
         </TabsContent>
 

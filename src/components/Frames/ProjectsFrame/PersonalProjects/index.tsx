@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -25,8 +24,10 @@ const PersonalProjectsCard = ({
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <Card className={`w-full border`}>
-      <CardHeader className={`flex gap-2`}>
+    <Card
+      className={`flex w-full flex-col-reverse items-center border lg:flex-row`}
+    >
+      <CardHeader className={`flex max-w-[400px] gap-2 lg:max-w-[700px]`}>
         <CardTitle>{projectName}</CardTitle>
 
         <CardDescription className={`leading-relaxed`}>
@@ -42,69 +43,43 @@ const PersonalProjectsCard = ({
         </div>
       </CardHeader>
 
-      <CardContent className={`md:ml-5 lg:ml-10`}>
-        <figure
-          onMouseOver={() => setIsHovered(true)}
-          onMouseOut={() => setIsHovered(false)}
-          className={`xs:h-[546px] xs:w-[350px] relative h-[468px] w-[300px] transition-all md:h-[245px] md:w-[500px] lg:h-[343px] lg:w-[700px]`}
-        >
-          {isHovered && (
-            <div className={`relative size-full`}>
-              <div className="absolute left-1/2 top-1/2 z-20 flex -translate-x-1/2 -translate-y-1/2 gap-3">
-                <Link href={link} target="_blank">
-                  <Button variant={"outline"} className={`rounded-sm`}>
-                    <FaArrowUpRightFromSquare className={`text-foreground`} />
-                  </Button>
-                </Link>
-                <Link href={code} target="_blank">
-                  <Button variant={"outline"} className={`rounded-sm`}>
-                    <FaGithub className={`text-foreground`} />
-                  </Button>
-                </Link>
-              </div>
+      <figure
+        onMouseOver={() => setIsHovered(true)}
+        onMouseOut={() => setIsHovered(false)}
+        className={`relative aspect-square h-[350px] xs:h-[400px]`}
+      >
+        {isHovered && (
+          <div className={`relative size-full`}>
+            <div className="absolute left-1/2 top-1/2 z-20 flex -translate-x-1/2 -translate-y-1/2 gap-3">
+              <Link href={link} target="_blank">
+                <Button variant={"outline"} className={`rounded-sm`}>
+                  <FaArrowUpRightFromSquare className={`text-foreground`} />
+                </Button>
+              </Link>
+              <Link href={code} target="_blank">
+                <Button variant={"outline"} className={`rounded-sm`}>
+                  <FaGithub className={`text-foreground`} />
+                </Button>
+              </Link>
             </div>
-          )}
+          </div>
+        )}
 
-          <ProjectImage projectName={projectName} srcImage={srcImage} />
+        <Image
+          src={`${srcImage}`}
+          fill
+          alt={`${projectName} - Captura de Tela`}
+          className={`rounded-t-sm border border-border lg:rounded-r-sm lg:rounded-tl-none`}
+        />
 
-          {isHovered && (
-            <div
-              className={`absolute inset-0 z-10 size-full rounded-md bg-black/60`}
-            ></div>
-          )}
-        </figure>
-      </CardContent>
+        {isHovered && (
+          <div
+            className={`absolute inset-0 z-10 size-full rounded-md bg-black/60`}
+          ></div>
+        )}
+      </figure>
     </Card>
   );
 };
 
 export default memo(PersonalProjectsCard);
-
-const ProjectImage = ({
-  srcImage,
-  projectName,
-}: {
-  srcImage: string;
-  projectName: string;
-}) => {
-  const src = srcImage.split(".")[0];
-  const extension = srcImage.split(".")[1];
-  console.log(`src`, src);
-  return (
-    <>
-      <Image
-        src={`${srcImage}`}
-        fill
-        alt={`${projectName} - Captura de Tela`}
-        className={`rounded-md border border-border`}
-      />
-
-      <Image
-        src={`${src}-mobile.${extension}`}
-        fill
-        alt={`${projectName} - Captura de Tela`}
-        className={`rounded-md border border-border md:hidden`}
-      />
-    </>
-  );
-};
