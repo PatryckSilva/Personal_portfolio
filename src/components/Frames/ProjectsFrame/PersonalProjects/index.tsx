@@ -69,12 +69,12 @@ const PersonalProjectsCard = ({
           src={`${srcImage}`}
           fill
           alt={`${projectName} - Captura de Tela`}
-          className={`rounded-t-sm border border-border lg:rounded-l-none lg:rounded-r-sm lg:group-even:rounded-l-sm lg:group-even:rounded-r-none`}
+          className={`rounded-t-sm border-b border-border lg:rounded-l-none lg:rounded-r-sm lg:border-b-0 lg:border-l lg:group-even:rounded-l-sm lg:group-even:rounded-r-none lg:group-even:border-r`}
         />
 
         {isHovered && (
           <div
-            className={`absolute inset-0 z-10 size-full rounded-md bg-black/60`}
+            className={`absolute inset-0 z-10 size-full rounded-t-sm bg-black/60 lg:rounded-l-none lg:rounded-r-sm lg:group-even:rounded-l-sm lg:group-even:rounded-r-none lg:group-even:border-r`}
           ></div>
         )}
       </figure>
