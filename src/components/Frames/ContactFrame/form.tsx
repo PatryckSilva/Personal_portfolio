@@ -75,7 +75,7 @@ export function ContactForm() {
             onSubmit={form.handleSubmit(onSubmit)}
             className="flex flex-col"
           >
-            <section className={`flex items-center gap-5`}>
+            <section className={`flex flex-col items-center gap-5 md:flex-row`}>
               <FormField
                 control={form.control}
                 name="name"
@@ -117,6 +117,7 @@ export function ContactForm() {
                     <FormLabel>Mensagem:</FormLabel>
                     <FormControl>
                       <Textarea
+                        className={`h-[200px]`}
                         placeholder="Envie uma mensagem e responderei o mais rápido possível!"
                         {...field}
                       />
