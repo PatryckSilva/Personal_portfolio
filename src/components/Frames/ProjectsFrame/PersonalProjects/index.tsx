@@ -74,7 +74,7 @@ const PersonalProjectsCard = ({
 
         {isHovered && (
           <div
-            className={`absolute inset-0 z-10 size-full rounded-t-sm bg-black/60 lg:rounded-l-none lg:rounded-r-sm lg:group-even:rounded-l-sm lg:group-even:rounded-r-none lg:group-even:border-r`}
+            className={`absolute inset-0 z-10 size-full rounded-t-sm bg-black/60 lg:rounded-l-none lg:rounded-r-sm lg:group-even:rounded-l-sm lg:group-even:rounded-r-none`}
           ></div>
         )}
       </figure>
