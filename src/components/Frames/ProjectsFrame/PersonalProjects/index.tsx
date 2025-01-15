@@ -25,7 +25,7 @@ const PersonalProjectsCard = ({
 
   return (
     <Card
-      className={`flex w-full flex-col-reverse items-center border lg:flex-row`}
+      className={`group flex w-full flex-col-reverse items-center border lg:flex-row lg:even:flex-row-reverse`}
     >
       <CardHeader className={`flex max-w-[400px] gap-2 lg:max-w-[700px]`}>
         <CardTitle>{projectName}</CardTitle>
@@ -69,7 +69,7 @@ const PersonalProjectsCard = ({
           src={`${srcImage}`}
           fill
           alt={`${projectName} - Captura de Tela`}
-          className={`rounded-t-sm border border-border lg:rounded-r-sm lg:rounded-tl-none`}
+          className={`rounded-t-sm border border-border lg:rounded-l-none lg:rounded-r-sm lg:group-even:rounded-l-sm lg:group-even:rounded-r-none`}
         />
 
         {isHovered && (
