@@ -1,5 +1,5 @@
 import { links } from "@/utils/constants";
-import { ExperienceSection } from "./job-infos";
+import { ExperienceContent } from "./job-infos";
 
 const fullStackXpInfos = [
   "Participação em revisões de código, fornecendo feedback construtivo e promovendo a melhora da qualidade do código em 25%.",
@@ -30,32 +30,13 @@ const frontEndXpInfos = [
   "Adaptação a novas ferramentas e tecnologias conforme necessário, demonstrando vontade de aprender e crescer.",
 ];
 
-export const experiences = [
-  {
-    role: "Full-stack Developer",
-    company: "Apex NFT Brasil",
-    date: "06/2023 - Atual",
-    activities: fullStackXpInfos,
-    link: links.apexWeb,
-  },
-  {
-    role: "Front-end Developer",
-    company: "Apex NFT Brasil",
-    date: "06/2022 - 06/2023",
-    activities: frontEndXpInfos,
-    link: links.apexNft,
-  },
-];
-
 export const dataExperience = [
   {
     title: "Apex NFT Brasil",
     subtitle: "Full-stack Developer",
     content: (
       <section className="flex flex-col gap-10 lg:max-w-[1200px]">
-        {experiences.slice(0, 1).map((item, index) => (
-          <ExperienceSection key={index} experience={item} />
-        ))}
+        <ExperienceContent bulletPoints={fullStackXpInfos} />
       </section>
     ),
     link: links.apexWeb,
@@ -66,12 +47,10 @@ export const dataExperience = [
     subtitle: "Front-end Developer",
     content: (
       <section className="flex flex-col gap-10 lg:max-w-[1200px]">
-        {experiences.slice(1, 2).map((item, index) => (
-          <ExperienceSection key={index} experience={item} />
-        ))}
+        <ExperienceContent bulletPoints={frontEndXpInfos} />
       </section>
     ),
-    link: links.apexWeb,
+    link: links.apexNft,
     date: "06/2022 - 06/2023",
   },
 ];
