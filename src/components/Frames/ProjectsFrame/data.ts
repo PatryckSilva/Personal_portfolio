@@ -7,6 +7,7 @@ export type TProject = {
   link: string;
   code: string;
   techs: string[];
+  isCollab?: boolean;
 };
 
 export const personalProjectsInfos: TProject[] = [
@@ -87,6 +88,7 @@ export const collabProjectsInfos: TProject[] = [
       "Animations",
       "Design",
     ],
+    isCollab: true,
   },
   {
     projectName: "NoventaTI",
@@ -107,6 +109,7 @@ export const collabProjectsInfos: TProject[] = [
       "Zustand",
       "Embla Carousel",
     ],
+    isCollab: true,
   },
   {
     projectName: "Metasource Games",
@@ -124,5 +127,6 @@ export const collabProjectsInfos: TProject[] = [
       "Design",
       "Embla Carousel",
     ],
+    isCollab: true,
   },
 ];

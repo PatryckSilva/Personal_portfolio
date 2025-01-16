@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import React, { memo } from "react";
+import React from "react";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { TProject } from "../data";
 
@@ -20,9 +20,9 @@ const PersonalProjectsCard = ({
   code,
   link,
   techs,
+  isCollab = false,
 }: TProject) => {
   const [isHovered, setIsHovered] = React.useState(false);
-
   return (
     <Card
       className={`group flex w-full flex-col-reverse items-center border lg:flex-row lg:even:flex-row-reverse`}
@@ -45,6 +45,17 @@ const PersonalProjectsCard = ({
             </Badge>
           ))}
         </div>
+        {isCollab && (
+          <span className={`py-4 text-sm text-muted-foreground`}>
+            Associado à{" "}
+            <Link
+              href={link}
+              className={`all underline transition hover:text-white`}
+            >
+              Apex NFT Brasil.
+            </Link>
+          </span>
+        )}
       </CardHeader>
 
       <figure
@@ -86,4 +97,4 @@ const PersonalProjectsCard = ({
   );
 };
 
-export default memo(PersonalProjectsCard);
+export default PersonalProjectsCard;

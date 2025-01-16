@@ -59,6 +59,7 @@ export const ProjectsFrame = () => {
                 code={item.code}
                 link={item.link}
                 techs={item.techs}
+                isCollab={item.isCollab}
               />
             ))}
           </section>
