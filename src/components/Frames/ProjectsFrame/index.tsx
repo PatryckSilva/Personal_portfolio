@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { personalProjectsInfos } from "./data";
+import { collabProjectsInfos, personalProjectsInfos } from "./data";
 import PersonalProjectsCard from "./PersonalProjects";
 
 export const ProjectsFrame = () => {
@@ -22,11 +22,10 @@ export const ProjectsFrame = () => {
       </article>
 
       <Tabs defaultValue="mine" className={`space-y-5`}>
-        {/* TODO: grid-cols-2 após adicionar aba de collab */}
-        <TabsList className="grid w-full grid-cols-1">
+        <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="mine">Meus Projetos Pessoais</TabsTrigger>
 
-          {/* <TabsTrigger value="collab">Minhas colaborações</TabsTrigger> */}
+          <TabsTrigger value="collab">Minhas colaborações</TabsTrigger>
         </TabsList>
 
         <TabsContent value="mine">
@@ -47,8 +46,23 @@ export const ProjectsFrame = () => {
           </section>
         </TabsContent>
 
-        {/* <TabsContent value="collab">
-        </TabsContent> */}
+        <TabsContent value="collab">
+          <section
+            className={`flex w-full max-w-[1000px] flex-col justify-center gap-10`}
+          >
+            {collabProjectsInfos.map((item, index) => (
+              <PersonalProjectsCard
+                projectDescription={item.projectDescription}
+                key={index}
+                projectName={item.projectName}
+                srcImage={item.srcImage}
+                code={item.code}
+                link={item.link}
+                techs={item.techs}
+              />
+            ))}
+          </section>
+        </TabsContent>
       </Tabs>
     </section>
   );

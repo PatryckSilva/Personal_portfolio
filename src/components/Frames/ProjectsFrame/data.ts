@@ -8,17 +8,6 @@ export type TProject = {
   code: string;
   techs: string[];
 };
-const techs = [
-  "NextJs",
-  "ReactJs",
-  "TailwindCSS",
-  "React-Hook-Form",
-  "Zod",
-  "Shadcn/ui",
-  "Typescript",
-  "Animations",
-  "Design",
-];
 
 export const personalProjectsInfos: TProject[] = [
   {
@@ -28,7 +17,17 @@ export const personalProjectsInfos: TProject[] = [
     srcImage: "/images/personalProjects/Case-1.webp",
     link: links.koscakWeb,
     code: links.koscakCode,
-    techs: techs,
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "React-Hook-Form",
+      "Zod",
+      "Shadcn/ui",
+      "Typescript",
+      "Animations",
+      "Design",
+    ],
   },
   {
     projectName: "Meu Portfólio Pessoal",
@@ -37,7 +36,17 @@ export const personalProjectsInfos: TProject[] = [
     srcImage: "/images/personalProjects/Case-2.webp",
     link: links.portfolioWeb,
     code: links.portfolioCode,
-    techs: techs,
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "React-Hook-Form",
+      "Zod",
+      "Shadcn/ui",
+      "Typescript",
+      "Animations",
+      "Design",
+    ],
   },
   {
     projectName: "Página de Feedback para Doces Artesanais",
@@ -46,6 +55,74 @@ export const personalProjectsInfos: TProject[] = [
     srcImage: "/images/personalProjects/Case-3.webp",
     link: links.natsWeb,
     code: links.natsCode,
-    techs: techs,
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "React-Hook-Form",
+      "Zod",
+      "Shadcn/ui",
+      "Typescript",
+      "Animations",
+      "Design",
+    ],
+  },
+];
+
+export const collabProjectsInfos: TProject[] = [
+  {
+    projectName: "Lab Culture",
+    projectDescription:
+      "No projeto da Lab Culture, um estúdio especializado em design e experiência do usuário, contribuí para o desenvolvimento completo do site. Trabalhamos seguindo fielmente o protótipo elaborado no Figma, garantindo que cada detalhe do design fosse traduzido com precisão para o ambiente web. O site é rico em animações, proporcionando uma experiência interativa e fluida para os usuários. Também implementei o envio de e-mails diretamente pela plataforma e integrei uma API desenvolvida com Strapi, que permite a publicação e gerenciamento de conteúdo de forma eficiente. Foquei em criar uma interface responsiva, otimizando a performance e mantendo uma estrutura de código limpa e escalável, alinhada às melhores práticas do mercado.",
+    srcImage: "/images/collabProjects/lab-culture.webp",
+    link: "/",
+    code: "/",
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "Typescript",
+      "Nodemailer",
+      "Strapi",
+      "Animations",
+      "Design",
+    ],
+  },
+  {
+    projectName: "NoventaTI",
+    projectDescription:
+      "Desenvolvemos o novo site institucional da Noventa, uma empresa de destaque nacional no mercado de sistemas de gestão de obras. O projeto inclui um blog totalmente customizado, oferecendo flexibilidade na publicação de conteúdos estratégicos, e um checkout integrado diretamente ao site, projetado para otimizar a conversão de novos clientes. Nosso foco está em entregar uma solução moderna, responsiva e funcional, alinhada à identidade da empresa e às necessidades de seu público-alvo.",
+    srcImage: "/images/collabProjects/90.webp",
+    link: "/",
+    code: "/",
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "Typescript",
+      "Nodemailer",
+      "Strapi",
+      "Animations",
+      "Design",
+      "Zustand",
+      "Embla Carousel",
+    ],
+  },
+  {
+    projectName: "Metasource Games",
+    projectDescription:
+      "Desenvolvemos o site institucional da Metasource Games, uma empresa americana especializada em jogos baseados em blockchain. Fomos responsáveis por todo o processo, desde o design e posicionamento estratégico até o copywriting e o desenvolvimento. O site foi projetado para refletir a inovação e o dinamismo da empresa, com uma interface atraente e funcional que comunica efetivamente os valores e produtos da marca.",
+    srcImage: "/images/collabProjects/metagames.webp",
+    link: "/",
+    code: "/",
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "Typescript",
+      "Animations",
+      "Design",
+      "Embla Carousel",
+    ],
   },
 ];

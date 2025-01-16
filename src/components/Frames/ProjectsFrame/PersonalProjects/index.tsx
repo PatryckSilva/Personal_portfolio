@@ -28,7 +28,11 @@ const PersonalProjectsCard = ({
       className={`group flex w-full flex-col-reverse items-center border lg:flex-row lg:even:flex-row-reverse`}
     >
       <CardHeader className={`flex max-w-[400px] gap-2 lg:max-w-[700px]`}>
-        <CardTitle>{projectName}</CardTitle>
+        <CardTitle>
+          <Link href={link} target="_blank" className={`hover:underline`}>
+            {projectName}
+          </Link>
+        </CardTitle>
 
         <CardDescription className={`leading-relaxed`}>
           {projectDescription}
