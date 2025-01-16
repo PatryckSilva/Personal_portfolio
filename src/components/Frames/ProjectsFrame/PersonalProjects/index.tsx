@@ -12,6 +12,7 @@ import Link from "next/link";
 import React from "react";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { TProject } from "../data";
+import { links } from "@/utils/constants";
 
 const PersonalProjectsCard = ({
   projectName,
@@ -49,7 +50,7 @@ const PersonalProjectsCard = ({
           <span className={`py-4 text-sm text-muted-foreground`}>
             Associado à{" "}
             <Link
-              href={link}
+              href={links.apexWeb}
               className={`all underline transition hover:text-white`}
             >
               Apex NFT Brasil.
@@ -71,11 +72,13 @@ const PersonalProjectsCard = ({
                   <FaArrowUpRightFromSquare className={`text-foreground`} />
                 </Button>
               </Link>
-              <Link href={code} target="_blank">
-                <Button variant={"outline"} className={`rounded-sm`}>
-                  <FaGithub className={`text-foreground`} />
-                </Button>
-              </Link>
+              {!isCollab && (
+                <Link href={code} target="_blank">
+                  <Button variant={"outline"} className={`rounded-sm`}>
+                    <FaGithub className={`text-foreground`} />
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
         )}
