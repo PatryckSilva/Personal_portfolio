@@ -61,7 +61,7 @@ const PersonalProjectsCard = ({
       <figure
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
-        className={`relative aspect-square h-[350px] xs:h-[400px]`}
+        className={`relative aspect-square h-full min-h-[350px] w-full lg:min-h-[400px]`}
       >
         {isHovered && (
           <div className={`relative size-full`}>
