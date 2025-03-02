@@ -12,6 +12,8 @@ export enum links {
   koscakCode = "https://github.com/PatryckSilva/koscak-website",
   natsWeb = "https://nats-feedback.vercel.app/",
   natsCode = "https://github.com/PatryckSilva/nats-feedback",
+  notesManagerWeb = "https://notes-manager-front-eight.vercel.app/",
+  notesManagerCode = "https://github.com/PatryckSilva/notes-manager-front",
 }
 
 export enum pages {

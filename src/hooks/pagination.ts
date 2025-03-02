@@ -1,4 +1,6 @@
 "use client";
+
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export const usePagination = <T = any>({
@@ -8,6 +10,7 @@ export const usePagination = <T = any>({
   items: T[];
   maxItemsPerPage: number;
 }) => {
+  const router = useRouter();
   const [currentPage, setCurrentPage] = useState<number>(0);
 
   const pages: number = Math.ceil(items.length / maxItemsPerPage);
@@ -15,9 +18,10 @@ export const usePagination = <T = any>({
   const endIndex: number = currentPage + maxItemsPerPage;
   const paginatedItems = items.slice(currentPage, endIndex);
 
-  const handlePaginationClick = (index: number) => {
-    const newCurrentPage = (index * maxItemsPerPage) % items.length;
+  const handlePaginationClick = (event: { selected: number }) => {
+    const newCurrentPage = (event.selected * maxItemsPerPage) % items.length;
     setCurrentPage(newCurrentPage);
+    router.push("#projects", { scroll: true });
   };
 
   return {

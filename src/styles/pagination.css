@@ -1,0 +1,40 @@
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-tertiary);
+  gap: 5px;
+  user-select: none;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .pagination {
+    max-width: 350px;
+  }
+}
+
+.pagination .page-num {
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 16px !important;
+  @apply flex size-[40px] items-center justify-center rounded-sm border border-border bg-background;
+}
+
+.pagination .ellipsis {
+  font-size: 24px;
+}
+
+.pagination .disabled {
+  display: none;
+}
+
+.pagination .active {
+  @apply border border-border bg-secondary;
+}
+
+.pagination .link_pagination {
+  @apply flex h-full w-full items-center justify-center;
+}

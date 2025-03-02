@@ -1,10 +1,23 @@
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { collabProjectsInfos, personalProjectsInfos } from "./data";
 import PersonalProjectsCard from "./PersonalProjects";
+import { usePagination } from "@/hooks/pagination";
+import { Pagination } from "@/components/ui/paginate";
 
 export const ProjectsFrame = () => {
+  const {
+    handlePaginationClick: handlePaginationPersonal,
+    pages: pagesPersonalProjects,
+    paginatedItems: paginatedItemsPersonalProjects,
+  } = usePagination({
+    items: personalProjectsInfos,
+    maxItemsPerPage: 3,
+  });
+
   return (
     <section
+      id="projects"
       className={`flex w-full flex-col items-center justify-start gap-10 px-4 pt-20`}
     >
       <article className="flex flex-col items-center gap-4">
@@ -32,7 +45,7 @@ export const ProjectsFrame = () => {
           <section
             className={`flex w-full max-w-[1000px] flex-col justify-center gap-10`}
           >
-            {personalProjectsInfos.map((item, index) => (
+            {paginatedItemsPersonalProjects.map((item, index) => (
               <PersonalProjectsCard
                 projectDescription={item.projectDescription}
                 key={index}
@@ -44,6 +57,15 @@ export const ProjectsFrame = () => {
               />
             ))}
           </section>
+
+          <br />
+
+          {personalProjectsInfos.length !== 0 && (
+            <Pagination
+              handlePaginationClick={handlePaginationPersonal}
+              pages={pagesPersonalProjects}
+            />
+          )}
         </TabsContent>
 
         <TabsContent value="collab">

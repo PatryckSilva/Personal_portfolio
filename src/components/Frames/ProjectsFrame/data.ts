@@ -49,6 +49,29 @@ export const personalProjectsInfos: TProject[] = [
       "Design",
     ],
   },
+
+  {
+    projectName: "Notes Manager",
+    projectDescription:
+      "Desenvolvi um gerenciador de notas para otimizar a organização pessoal e profissional. O projeto oferece funcionalidades CRUD completas, permitindo criar, editar, excluir e visualizar anotações de forma prática. Utilizei Next.js e React.js para construir uma interface intuitiva e responsiva, com Tailwind CSS e shadcn/ui garantindo uma estilização moderna e componentes reutilizáveis. React-Hook-Form aliado ao Zod foi empregado para validação robusta dos formulários, enquanto o back-end foi implementado com NestJS, integrando Prisma e PostgreSQL para um gerenciamento eficiente dos dados. Também fui responsável pelo design e pelas animações, assegurando uma experiência de navegação dinâmica e atraente.",
+    srcImage: "/images/personalProjects/notesmanager.webp",
+    code: links.notesManagerCode,
+    link: links.notesManagerWeb,
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "React-Hook-Form",
+      "Zod",
+      "Shadcn/ui",
+      "Typescript",
+      "Animations",
+      "Design",
+      "NestJs",
+      "Prisma",
+      "PostgreSQL",
+    ],
+  },
   {
     projectName: "Página de Feedback para Doces Artesanais",
     projectDescription:
