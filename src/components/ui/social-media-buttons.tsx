@@ -29,7 +29,7 @@ export const SocialMediasButtons = () => {
   ];
 
   return (
-    <section className={`flex flex-col gap-3.5`}>
+    <section className={`flex flex-col items-center gap-3.5`}>
       <aside className={`flex items-end gap-3`}>
         {socialMedias.map((item, index) => (
           <Link

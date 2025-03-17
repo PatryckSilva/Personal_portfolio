@@ -11,7 +11,7 @@ export default function HomeInitialFrame() {
 
   return (
     <BackgroundBeamsWithCollision>
-      <section className="relative -mt-20 flex size-full flex-col items-center justify-center">
+      <section className="relative xs:-mt-20 flex size-full flex-col items-center justify-center">
         <section
           className={`flex w-full flex-col-reverse items-center justify-center gap-20 md:flex-row lg:justify-evenly lg:gap-0`}
         >
@@ -41,7 +41,7 @@ export default function HomeInitialFrame() {
         </section>
 
         <span
-          className={`text_gradients absolute bottom-5 left-1/2 flex -translate-x-1/2 transform flex-col items-center gap-3 font-mono font-semibold uppercase text-foreground`}
+          className={`text_gradients absolute bottom-5 -right-3 scale-75 xs:scale-100 xs:left-1/2 flex -translate-x-1/2 transform flex-col items-center gap-3 font-mono font-semibold uppercase text-foreground`}
         >
           scroll <DoubleArrowDownIcon className="animate-bounce" />
         </span>
