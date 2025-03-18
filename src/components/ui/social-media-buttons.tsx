@@ -6,8 +6,6 @@ import {
 import { cn } from "@/lib/utils";
 import { links } from "@/utils/constants";
 import Link from "next/link";
-import { TbFileCv } from "react-icons/tb";
-import { Button } from "./button";
 
 export const SocialMediasButtons = () => {
   const socialMedias = [
@@ -29,7 +27,6 @@ export const SocialMediasButtons = () => {
   ];
 
   return (
-    <section className={`flex flex-col items-center gap-3.5`}>
       <aside className={`flex items-end gap-3`}>
         {socialMedias.map((item, index) => (
           <Link
@@ -44,12 +41,5 @@ export const SocialMediasButtons = () => {
           </Link>
         ))}
       </aside>
-      <a
-        href={"/pdfs/patryck_silva_cv_fullstack_pt.pdf"}
-        download={"Patryck_Silva_CV"}
-      >
-        <Button variant={"outline"}>Baixar CV</Button>
-      </a>
-    </section>
   );
 };

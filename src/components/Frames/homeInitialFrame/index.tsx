@@ -1,4 +1,5 @@
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams";
+import { Button } from "@/components/ui/button";
 import { MyStacks } from "@/components/ui/profile-stacks-circle";
 import { SocialMediasButtons } from "@/components/ui/social-media-buttons";
 import { TextHighlighter } from "@/components/ui/text-highlighter";
@@ -15,8 +16,14 @@ export default function HomeInitialFrame() {
         <section
           className={`flex w-full flex-col-reverse items-center justify-center gap-20 md:flex-row lg:justify-evenly lg:gap-0`}
         >
-          <aside className={`md:hidden`}>
+          <aside className={`md:hidden flex flex-col items-center gap-3.5`}>
             <SocialMediasButtons />
+             <a
+        href={"/pdfs/patryck_silva_cv_fullstack_pt.pdf"}
+        download={"Patryck_Silva_CV"}
+      >
+        <Button variant={"outline"}>Baixar CV</Button>
+      </a>
           </aside>
 
           <aside>
@@ -34,8 +41,13 @@ export default function HomeInitialFrame() {
               </TextHighlighter>
             </h1>
 
-            <aside className={`hidden md:flex`}>
-              <SocialMediasButtons />
+            <aside className={`hidden md:flex flex-col items-center gap-3.5`}>
+              <SocialMediasButtons /> <a
+        href={"/pdfs/patryck_silva_cv_fullstack_pt.pdf"}
+        download={"Patryck_Silva_CV"}
+      >
+        <Button variant={"outline"}>Baixar CV</Button>
+      </a>
             </aside>
           </article>
         </section>
