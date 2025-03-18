@@ -4,13 +4,14 @@ import { SocialMediasButtons } from "../ui/social-media-buttons";
 import { ModeToggle } from "../Theme/ModeToggle";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer
       className={`flex h-20 w-full items-center justify-evenly gap-5 border-t border-border bg-background`}
     >
       <aside>
         <span className={`text-sm font-medium md:text-base`}>
-          © 2024{" "}
+          © {currentYear}{" "}
           <Link
             href={links.linkedin}
             target="_blank"
