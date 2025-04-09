@@ -1,6 +1,14 @@
 import { links } from "@/utils/constants";
 import { ExperienceContent } from "./job-infos";
 
+const reveloFreelanceInfos = [
+  "Desenvolver e testar prompts utilizando a IA proprietária da Revelo para criar interfaces visualmente atraentes e funcionais.",
+  "Realizar testes de build, identificar erros em runtime e verificar se o código está alinhado com as referências de design e se as funcionalidades especificadas foram implementadas corretamente.",
+  "Documentar todos os testes realizados, problemas identificados e modificações efetuadas, garantindo transparência, tanto para o código gerado pela IA quanto para o código reescrito.",
+  "Refatorar e otimizar o código gerado, reescrevendo-o para que seja elegante, robusto e totalmente funcional, atendendo integralmente ao prompt final e às referências de design.",
+  "Garantir que cada entrega atenda aos requisitos visuais e funcionais, fornecendo soluções de alta qualidade e eficiência, de modo a cumprir as expectativas do projeto na Revelo.",
+];
+
 const fullStackXpInfos = [
   "Participação em revisões de código, fornecendo feedback construtivo e promovendo a melhora da qualidade do código em 25%.",
   "Contribuição em discussões estratégicas para definição de regras de negócios e soluções técnicas.",
@@ -31,6 +39,17 @@ const frontEndXpInfos = [
 ];
 
 export const dataExperience = [
+  {
+    title: "Revelo",
+    subtitle: "AI Training and Software Development Freelancer",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        <ExperienceContent bulletPoints={reveloFreelanceInfos} />
+      </section>
+    ),
+    link: links.revelo,
+    date: "03/2025 - 04/2025",
+  },
   {
     title: "Apex NFT Brasil",
     subtitle: "Full-stack Developer",

@@ -14,6 +14,7 @@ export enum links {
   natsCode = "https://github.com/PatryckSilva/nats-feedback",
   notesManagerWeb = "https://notes-manager-front-eight.vercel.app/",
   notesManagerCode = "https://github.com/PatryckSilva/notes-manager-front",
+  revelo = "https://www.linkedin.com/company/revelohq/posts/?feedView=all",
 }
 
 export enum pages {
