@@ -34,7 +34,7 @@ export const ProjectsFrame = () => {
         </span>
       </article>
 
-      <Tabs defaultValue="mine" className={`space-y-5`}>
+      <Tabs defaultValue="collab" className={`space-y-5`}>
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="mine">Meus Projetos Pessoais</TabsTrigger>
 
