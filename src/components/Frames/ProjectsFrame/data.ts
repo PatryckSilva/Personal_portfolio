@@ -95,6 +95,29 @@ export const personalProjectsInfos: TProject[] = [
 
 export const collabProjectsInfos: TProject[] = [
   {
+    projectName: "Meme.Dealer",
+    code: "/",
+    projectDescription:
+      "Atuei como desenvolvedor Fullstack no Meme.Dealer, um launchpad e swap para Bitcoin Runes projetado com o mecanismo 'Perfect Fair Launch' para máxima segurança contra fraudes. A plataforma integra automaticamente DAOs, staking, vesting e liquidez para cada token lançado. No backend, utilizamos Node.js, Express e MongoDB para construir sistemas robustos de governança, votação e distribuição de recompensas, empregando LavinMQ para processamento assíncrono de transações e Redis para dados em tempo real. No frontend, desenvolvemos com Next.js e Tailwind CSS as interfaces para swap, dashboard de investimentos e gestão de DAOs, focando em performance e usabilidade para o ecossistema Bitcoin.",
+    srcImage: "/images/collabProjects/Memedealer.webp",
+    link: "https://meme.dealer/",
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "TailwindCSS",
+      "Typescript",
+      "Animations",
+      "Design",
+      "ExpressJs",
+      "MongoDB",
+      "Web3.js",
+      "LavinMQ",
+      "Redis",
+      "Socket.io",
+    ],
+    isCollab: true,
+  },
+  {
     projectName: "Lab Culture",
     projectDescription:
       "No projeto da Lab Culture, um estúdio especializado em design e experiência do usuário, contribuí para o desenvolvimento completo do site. Trabalhamos seguindo fielmente o protótipo elaborado no Figma, garantindo que cada detalhe do design fosse traduzido com precisão para o ambiente web. O site é rico em animações, proporcionando uma experiência interativa e fluida para os usuários. Também implementei o envio de e-mails diretamente pela plataforma e integrei uma API desenvolvida com Strapi, que permite a publicação e gerenciamento de conteúdo de forma eficiente. Foquei em criar uma interface responsiva, otimizando a performance e mantendo uma estrutura de código limpa e escalável, alinhada às melhores práticas do mercado.",
