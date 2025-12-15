@@ -6,14 +6,7 @@ import { usePagination } from "@/hooks/pagination";
 import { Pagination } from "@/components/ui/paginate";
 
 export const ProjectsFrame = () => {
-  const {
-    handlePaginationClick: handlePaginationPersonal,
-    pages: pagesPersonalProjects,
-    paginatedItems: paginatedItemsPersonalProjects,
-  } = usePagination({
-    items: personalProjectsInfos,
-    maxItemsPerPage: 3,
-  });
+  
 
   return (
     <section
@@ -45,7 +38,7 @@ export const ProjectsFrame = () => {
           <section
             className={`flex w-full max-w-[1000px] flex-col justify-center gap-10`}
           >
-            {paginatedItemsPersonalProjects.map((item, index) => (
+            {personalProjectsInfos.map((item, index) => (
               <PersonalProjectsCard
                 projectDescription={item.projectDescription}
                 key={index}
@@ -60,12 +53,7 @@ export const ProjectsFrame = () => {
 
           <br />
 
-          {personalProjectsInfos.length !== 0 && (
-            <Pagination
-              handlePaginationClick={handlePaginationPersonal}
-              pages={pagesPersonalProjects}
-            />
-          )}
+     
         </TabsContent>
 
         <TabsContent value="collab">

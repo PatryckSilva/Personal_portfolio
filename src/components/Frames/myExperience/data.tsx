@@ -10,21 +10,14 @@ const reveloFreelanceInfos = [
 ];
 
 const fullStackXpInfos = [
-  "Participação em revisões de código, fornecendo feedback construtivo e promovendo a melhora da qualidade do código em 25%.",
-  "Contribuição em discussões estratégicas para definição de regras de negócios e soluções técnicas.",
-  "Pesquisa e adoção de ferramentas e tecnologias que otimizaram o processo de desenvolvimento em 10%.",
-  "Colaboração com equipes multifuncionais para alinhar funcionalidades com objetivos de negócios, melhorando a eficiência em 20%.",
-  "Documentação de projetos e criação de guias de uso.",
-  "Desenvolvimento com Styled Components, React Query, Redux Toolkit, Jest, AWS, Node.js, Prisma, PostgreSQL, Docker e Strapi.",
-  "Gerenciamento de implementações em larga escala, garantindo manutenibilidade e escalabilidade.",
-  "Aplicação de princípios de design de software, incluindo SOLID, para garantir a manutenibilidade e escalabilidade das aplicações.",
-  "Criação de APIs robustas e eficientes com autenticação, manipulação de dados JSON e tratamento de erros.",
-  "Implementação de endpoints e manutenção dos existentes utilizando Node.js com Express e NestJS.",
-  "Implementação de testes automatizados que reduziram erros em produção em 30%.",
-  "Otimização de rotas com filtragem e paginação, além de melhorias no desempenho com estratégias de cache (Redis e memory-cache).",
-  "Integração com banco de dados utilizando Prisma.",
-  "Automação de tarefas recorrentes com cron jobs.",
-  "Utilização do headless CMS Strapi para gerenciar e estruturar conteúdos de forma eficiente.",
+  "Front-end & UX: Desenvolvimento de interfaces visuais atraentes e responsivas para sites e jogos NFT. Foco na performance e na fluidez da aplicação utilizando Next.js e React, com arquiteturas de gerenciamento de estado escaláveis (Redux, ContextAPI, Zustand) e React Query e Server components para sincronização de dados.",
+  "Arquitetura Real-Time: Implementação de funcionalidades em tempo real utilizando Socket.io integrado ao Redis (Pub/Sub). Essa arquitetura permitiu atualizações instantâneas de dados no site (lances de leilões e notificações), garantindo baixa latência e sincronia entre múltiplos clientes.",
+  "Produtividade com IA: Integração de ferramentas como Cursor AI e GitHub Copilot no fluxo diário de desenvolvimento, acelerando a escrita de boilerplate, testes e refatoração, o que aumentou a eficiência nas entregas do time.",
+  "Back-end & Arquitetura: Construção e manutenção de APIs RESTful robustas com Node.js (Express/NestJS). Implementação de estratégias avançadas de tratamento de erros, autenticação segura e manipulação complexa de dados JSON.",
+  "Performance & Assincronismo: Criação e gerenciamento de Cron Jobs para automação de tarefas recorrentes e uso de filas (RabbitMQ, LavinMQ) para processamento assíncrono. Implementação de camadas de cache (Redis, Memory-cache) para otimização de consultas e redução de latência.",
+  "Infraestrutura & Dados: Gerenciamento de banco de dados (PostgreSQL/MongoDB) utilizando ORMs como Prisma e Mongoose. Conteinerização completa de ambientes (banco de dados e aplicações) utilizando Docker e Docker Compose.",
+  "Integrações: Conexão de Smart Contracts (Blockchain) com o Front/Back-end e implementação de Headless CMS (Strapi) para gestão flexível de conteúdo.",
+  "Qualidade & Processos: Atuação ativa em Code Reviews e discussões de arquitetura, elevando a qualidade do código em 25%. Cobertura de testes automatizados (Jest) que reduziu falhas em produção em cerca de 30%."
 ];
 
 const frontEndXpInfos = [
