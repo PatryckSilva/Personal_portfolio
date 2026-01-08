@@ -95,6 +95,26 @@ export const personalProjectsInfos: TProject[] = [
 
 export const collabProjectsInfos: TProject[] = [
   {
+    projectName: "Novopangea",
+    code: "/",
+    projectDescription:
+      "Atuei como desenvolvedor Fullstack no Novopangea, um jogo de estratégia e experiência NFT na WAX Blockchain focado em storytelling colaborativo e economia digital. A plataforma permite que a comunidade influencie a criação de ativos e a narrativa através de votações. No backend, utilizei Express.js para construir APIs que gerenciam a lógica de jogo, inventário de ativos e o sistema de Creator Credits. No frontend, desenvolvi interfaces imersivas com Next.js e React, utilizando Sass para criar sistemas de design temáticos para os seis reinos elementais e Tanstack Query para gerenciamento de estado assíncrono, garantindo alta performance na sincronização de dados da blockchain e atualizações em tempo real para o marketplace.",
+    srcImage: "/images/collabProjects/novopangea.webp",
+    link: "https://game.novopangea.io/",
+    techs: [
+      "NextJs",
+      "ReactJs",
+      "Sass",
+      "Javascript",
+      "Animations",
+      "Design",
+      "ExpressJs",
+      "Web3.js",
+      "Tanstack Query",
+    ],
+    isCollab: true,
+  },
+  {
     projectName: "Meme.Dealer",
     code: "/",
     projectDescription:
