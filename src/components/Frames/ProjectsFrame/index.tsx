@@ -17,7 +17,7 @@ export const ProjectsFrame = () => {
         <h4
           className={`font-sans text-2xl font-bold uppercase text-foreground/80 md:text-3xl`}
         >
-          Meus Projetos
+          Projetos
         </h4>
 
         <span
