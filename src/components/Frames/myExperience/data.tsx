@@ -1,6 +1,13 @@
 import { links } from "@/utils/constants";
 import { ExperienceContent } from "./job-infos";
 
+const codeAuditXpInfos = [
+  "Realizar auditoria técnica rigorosa em desafios de programação (JavaScript/TypeScript), avaliando a corretude de algoritmos complexos e estruturas de dados.",
+  "Analisar criticamente suítes de testes unitários, identificando lacunas de cobertura, falsos positivos e a ausência de validação de edge cases em soluções de referência.",
+  "Elaborar relatórios técnicos e justificativas detalhadas em inglês, diagnosticando falhas de lógica (ex: problemas de backtracking ou greedy search) e desalinhamentos com os requisitos do prompt.",
+  "Garantir o controle de qualidade (QA) dos dados utilizados no treinamento de modelos de IA, assegurando que o código avaliado seja robusto, otimizado e atenda estritamente às regras de negócio."
+];
+
 const reveloFreelanceInfos = [
   "Desenvolver e testar prompts utilizando a IA proprietária da Revelo para criar interfaces visualmente atraentes e funcionais.",
   "Realizar testes de build, identificar erros em runtime e verificar se o código está alinhado com as referências de design e se as funcionalidades especificadas foram implementadas corretamente.",
@@ -31,7 +38,17 @@ const frontEndXpInfos = [
   "Adaptação a novas ferramentas e tecnologias conforme necessário, demonstrando vontade de aprender e crescer.",
 ];
 
-export const dataExperience = [
+export const dataExperience = [{
+    title: "Revelo",
+    subtitle: "AI Training and Software Development (Code Audits) Freelancer",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        <ExperienceContent bulletPoints={codeAuditXpInfos} />
+      </section>
+    ),
+    link: links.revelo,
+    date: "01/2026 - 02/2026",
+  },
   {
     title: "Revelo",
     subtitle: "AI Training and Software Development Freelancer",
