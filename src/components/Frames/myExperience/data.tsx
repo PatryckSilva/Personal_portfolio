@@ -5,7 +5,7 @@ const codeAuditXpInfos = [
   "Realizar auditoria técnica rigorosa em desafios de programação (JavaScript/TypeScript), avaliando a corretude de algoritmos complexos e estruturas de dados.",
   "Analisar criticamente suítes de testes unitários, identificando lacunas de cobertura, falsos positivos e a ausência de validação de edge cases em soluções de referência.",
   "Elaborar relatórios técnicos e justificativas detalhadas em inglês, diagnosticando falhas de lógica (ex: problemas de backtracking ou greedy search) e desalinhamentos com os requisitos do prompt.",
-  "Garantir o controle de qualidade (QA) dos dados utilizados no treinamento de modelos de IA, assegurando que o código avaliado seja robusto, otimizado e atenda estritamente às regras de negócio."
+  "Garantir o controle de qualidade (QA) dos dados utilizados no treinamento de modelos de IA, assegurando que o código avaliado seja robusto, otimizado e atenda estritamente às regras de negócio.",
 ];
 
 const reveloFreelanceInfos = [
@@ -24,7 +24,7 @@ const fullStackXpInfos = [
   "Performance & Assincronismo: Criação e gerenciamento de Cron Jobs para automação de tarefas recorrentes e uso de filas (RabbitMQ, LavinMQ) para processamento assíncrono. Implementação de camadas de cache (Redis, Memory-cache) para otimização de consultas e redução de latência.",
   "Infraestrutura & Dados: Gerenciamento de banco de dados (PostgreSQL/MongoDB) utilizando ORMs como Prisma e Mongoose. Conteinerização completa de ambientes (banco de dados e aplicações) utilizando Docker e Docker Compose.",
   "Integrações: Conexão de Smart Contracts (Blockchain) com o Front/Back-end e implementação de Headless CMS (Strapi) para gestão flexível de conteúdo.",
-  "Qualidade & Processos: Atuação ativa em Code Reviews e discussões de arquitetura, elevando a qualidade do código em 25%. Cobertura de testes automatizados (Jest) que reduziu falhas em produção em cerca de 30%."
+  "Qualidade & Processos: Atuação ativa em Code Reviews e discussões de arquitetura, elevando a qualidade do código em 25%. Cobertura de testes automatizados (Jest) que reduziu falhas em produção em cerca de 30%.",
 ];
 
 const frontEndXpInfos = [
@@ -38,7 +38,19 @@ const frontEndXpInfos = [
   "Adaptação a novas ferramentas e tecnologias conforme necessário, demonstrando vontade de aprender e crescer.",
 ];
 
-export const dataExperience = [{
+export const dataExperience = [
+  {
+    title: "TechFX",
+    subtitle: "Software Engineer",
+    content: (
+      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
+        <ExperienceContent bulletPoints={[]} />
+      </section>
+    ),
+    link: links.revelo,
+    date: "03/2026 - Present",
+  },
+  {
     title: "Revelo",
     subtitle: "AI Training and Software Development (Code Audits) Freelancer",
     content: (
