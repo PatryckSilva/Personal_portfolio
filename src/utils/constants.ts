@@ -15,6 +15,7 @@ export enum links {
   notesManagerWeb = "https://notes-manager-front-eight.vercel.app/",
   notesManagerCode = "https://github.com/PatryckSilva/notes-manager-front",
   revelo = "https://www.linkedin.com/company/revelohq/posts/?feedView=all",
+  techfx = "https://www.techfx.com.br/",
 }
 
 export enum pages {

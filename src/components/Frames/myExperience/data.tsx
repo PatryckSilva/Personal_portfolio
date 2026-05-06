@@ -47,7 +47,7 @@ export const dataExperience = [
         <ExperienceContent bulletPoints={[]} />
       </section>
     ),
-    link: links.revelo,
+    link: links.techfx,
     date: "03/2026 - Present",
   },
   {
