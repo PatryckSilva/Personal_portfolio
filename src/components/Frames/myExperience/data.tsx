@@ -48,7 +48,7 @@ export const dataExperience = [
       </section>
     ),
     link: links.techfx,
-    date: "03/2026 - Present",
+    date: "03/2026 - Atual",
   },
   {
     title: "Revelo",
@@ -81,18 +81,7 @@ export const dataExperience = [
       </section>
     ),
     link: links.apexWeb,
-    date: "06/2023 - Atual",
-  },
-  {
-    title: "Apex NFT Brasil",
-    subtitle: "Front-end Developer",
-    content: (
-      <section className="flex flex-col gap-10 lg:max-w-[1200px]">
-        <ExperienceContent bulletPoints={frontEndXpInfos} />
-      </section>
-    ),
-    link: links.apexNft,
-    date: "06/2022 - 06/2023",
+    date: "06/2023 - 03/2026",
   },
 ];
 
